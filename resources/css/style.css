@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+/*-------------------------------------*/
+/*Basic Setup*/
+/*-------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color:#000;
+  text-rendering: optimizeLegibility;
+  font-family: 'Lato', sans-serif;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(../img/study.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/study.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+/*-------------------------------------*/
+/*Reusable Components*/
+/*-------------------------------------*/
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+/*---------LINKS----------*/
+
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+
+a:hover,
+a:active {
+  color: #fff;
+  border-bottom: 1px solid transparent;
+}
+
+/*-------------------------------------*/
+/*Header*/
+/*-------------------------------------*/
+
+.header {
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/* Navi */
+
+nav{
+  font-size: 150%;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.nav-item
+{
+  font-weight: bolder;
+}
+.bg-chng{
+  background-color: #0798b5;
+}
+.hidden{
+  display:none
+}
+.navbar{
+  transition: ease 0.5s;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: rgba(255,255,255,0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link :hover{
+  color: rgba(255,255,255);
+}
+/* Home button */
+
+
+.home {
+  width: 200px;
+  height: 100px;
+  left: 18%;
+  top: 62%;
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.home-btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgb(17, 140, 255);
+  outline: none;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+}
+
+.home-btn:hover {
+  transition: 1s ease-in-out;
+  background: white;
+  border-radius: 10px;
+}
+
+.home-btn:hover svg {
+  stroke-dashoffset: -480;
+  border-radius:  10px;
+}
+
+.home-btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.home-btn:hover span {
+    color : #0798b5;
+}
+
+/***********************************/
+/* Card css */
+/* ****************************************/
+
+.card {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 0px 20px #969695;
+}
+
+.card div:not(:first-child) {
+    padding: 10px 8px;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    background-color: #0798b5;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    opacity: 60%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.card ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.card li {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 1px 8px
+}
+
+.tags li{
+    background-color: goldenrod;
+    font-size: 0.7rem;
+    color: #705e5b;
+}
+
+.course-name{
+    font-size: 2rem;
+    position: relative;
+    margin-right: 10px;
+/*    margin-left: 30px;*/
+}
+
+/* Bookmark course */
+.course-name li:not(:first-of-type) {
+    padding: 0;
+}
+
+.bookmark-false{
+    position: absolute;
+    top: 0px;
+    right: 3px;
+}
+
+.bookmark-false .solid{
+    display: none;
+}
+
+.bookmark-false:hover .outline{
+    display: none;
+}
+
+.bookmark-false:hover .solid{
+    display: inline-block;
+}
+
+.card ion-icon {
+    vertical-align: middle;
+    color: #02c2f7;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+
+/* Show full course page button */
+.details{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.details-btn{
+    float: right;
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #008c9c;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #008c9c;
+    transition: .35s;
+    border-radius: 30px;
+}
+
+.details-btn:hover{
+    opacity: 80%;
+    color: #f8f8ff;
+    cursor: pointer;
+}
+.course-display
+{
+  background-color: #fff;
+  width: 100%;
+}
+
+/* /Card css */
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+
+    <!-- style-sheet includes bootstrap, main, queries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+
+
+    <!-- script includes bootstrap, font-awesome, jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1fde7af15d.js" crossorigin="anonymous"></script>
+    <!-- /script includes -->
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand"><i class="fas fa-hashtag"></i> Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="my-1 mx-2 close text-white hidden"><i class="fas fa-times" style="color:white;"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link navbar-item" href="#">I Year</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-item" href="#">II Year</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-item" href="#">III Year</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-item" href="#">IV Year</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <div class="header">
+            <div class="hero-text-box">
+                <h1>Confused!!<br />Check out the courses.</h1>
+                <div class="home">
+                    <div class="center">
+                        <button class="home-btn">
+                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                            </svg>
+                            <span>My Courses</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <section class="course-display container-fluid">
+            <div class="row2">
+
+                <div class="col2 span-1-of-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="resources/img/math.webp" />
+                        </div>
+
+                        <div class="course-name">
+                            <ul>
+                                <li>
+                                    <ion-icon name="return-down-forward-outline"></ion-icon>Intro to Software Systems
+                                </li>
+                                <li>
+                                    <div class="bookmark-false">
+                                        <ion-icon name="bookmark-outline" class="outline"></ion-icon>
+                                        <ion-icon name="bookmark" class="solid"></ion-icon>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tags">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                            <ul>
+                                <li>Bekar</li>
+                                <li>Fast</li>
+                            </ul>
+                        </div>
+                        <div class="rating">
+                            <ion-icon name="star-half-outline"></ion-icon>&lt;rating here&gt;
+                        </div>
+                        <div class="details">
+                            <button class="details-btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col2 span-1-of-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="resources/img/math.webp" />
+                        </div>
+                        <div class="course-name">
+                            <ul>
+                                <li>
+                                    <ion-icon name="return-down-forward-outline"></ion-icon>Intro
+                                    to Software Systems
+                                </li>
+                                <li>
+                                    <div class="bookmark-false">
+                                        <ion-icon name="bookmark-outline" class="outline"></ion-icon>
+                                        <ion-icon name="bookmark" class="solid"></ion-icon>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tags">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                            <ul>
+                                <li>Bekar</li>
+                                <li>Fast</li>
+                            </ul>
+                        </div>
+                        <div class="rating">
+                            <ion-icon name="star-half-outline"></ion-icon>&lt;rating here&gt;
+                        </div>
+                        <div class="details">
+                            <button class="details-btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col2 span-1-of-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="resources/img/math.webp" />
+                        </div>
+                        <div class="course-name">
+                            <ul>
+                                <li>
+                                    <ion-icon name="return-down-forward-outline"></ion-icon>Intro
+                                    to Software Systems
+                                </li>
+                                <li>
+                                    <div class="bookmark-false">
+                                        <ion-icon name="bookmark-outline" class="outline"></ion-icon>
+                                        <ion-icon name="bookmark" class="solid"></ion-icon>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tags">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                            <ul>
+                                <li>Bekar</li>
+                                <li>Fast</li>
+                            </ul>
+                        </div>
+                        <div class="rating">
+                            <ion-icon name="star-half-outline"></ion-icon>&lt;rating here&gt;
+                        </div>
+                        <div class="details">
+                            <button class="details-btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="resources/js/script.js"></script>
+<script src="resources/js/navcolorchange.js"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+</html>
