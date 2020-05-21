@@ -7,9 +7,10 @@
     "syllabus": ["HTML5", "CSS", "Python", "Javascript", "Bash"],
     "resources": ["Internet", "Book"],
     "ratings": 1,
+    "numRatings": 1,
     "year": 1,
     "semester": 2,
-    "review": ["Easy", "Useless", "Dead", "Self learning alot"],
+    "reviews": ["Easy", "Useless", "Dead", "Self learning alot"],
     "tags": ["Programming", "Web"]
   },
   {
@@ -20,9 +21,10 @@
     "syllabus": ["Tree", "Graph", "Heaps", "Hashing"],
     "resources": ["Internet", "CLRS Book"],
     "ratings": 4,
+    "numRatings": 1,
     "year": 1,
     "semester": 2,
-    "review": [
+    "reviews": [
       "Difficult",
       "Nice",
       "Well explained",
@@ -38,9 +40,10 @@
     "syllabus": ["Matrices", "Eigen Values and vectors", "Determinants"],
     "resources": ["Internet", "Gilbert Strang"],
     "ratings": 4,
+    "numRatings": 1,
     "year": 1,
     "semester": 2,
-    "review": ["Easy", "Nice professor"],
+    "reviews": ["Easy", "Nice professor"],
     "tags": ["Maths"]
   },
   {
@@ -56,9 +59,10 @@
     ],
     "resources": ["Slides"],
     "ratings": 2.5,
+    "numRatings": 1,
     "year": 1,
     "semester": 2,
-    "review": ["Very Slow", "Ok"],
+    "reviews": ["Very Slow", "Ok"],
     "tags": ["Electronics", "Smart Connectivity"]
   },
   {
@@ -69,9 +73,10 @@
     "syllabus": ["X86 Architecture", "Y86 Architecture"],
     "resources": ["Internet", "Book"],
     "ratings": 3,
+    "numRatings": 1,
     "year": 1,
     "semester": 2,
-    "review": [
+    "reviews": [
       "Mind Blowing",
       "Very Very Difficult",
       "Memory Heirarchy taught very well"
@@ -86,9 +91,10 @@
     "syllabus": ["Basic Graph Terminology", "Probability", "Boolean Logic"],
     "resources": ["Internet", "Book"],
     "ratings": 3,
+    "numRatings": 1,
     "year": 1,
     "semester": 1,
-    "review": ["Very Fast", "Skipped Topics", "Too much focus on small topics"],
+    "reviews": ["Very Fast", "Skipped Topics", "Too much focus on small topics"],
     "tags": ["Graphs", "Maths", "Logic"]
   },
   {
@@ -99,9 +105,10 @@
     "syllabus": ["Complex Numbers", "Complex Integration"],
     "resources": ["Internet", "Book"],
     "ratings": 2.5,
+    "numRatings": 1,
     "year": 1,
     "semester": 1,
-    "review": ["Ok", "Very Complex"],
+    "reviews": ["Ok", "Very Complex"],
     "tags": ["Integration", "Maths"]
   },
   {
@@ -112,9 +119,10 @@
     "syllabus": ["Boolean Logic", "Basic processor design", "Sequential logic"],
     "resources": ["Internet", "Book", "Slides"],
     "ratings": 4,
+    "numRatings": 1,
     "year": 1,
     "semester": 1,
-    "review": ["Very nice", "Well explained"],
+    "reviews": ["Very nice", "Well explained"],
     "tags": ["Electronics", "Processor", "Logic"]
   },
   {
@@ -129,9 +137,10 @@
     ],
     "resources": ["Internet", "Book"],
     "ratings": 4.5,
+    "numRatings": 1,
     "year": 1,
     "semester": 1,
-    "review": ["Good Course", "Many examples given", "Excellent Questions"],
+    "reviews": ["Good Course", "Many examples given", "Excellent Questions"],
     "tags": ["Programming", "Algorithms"]
   }
 ]
