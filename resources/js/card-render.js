@@ -5,12 +5,8 @@ var ISS = {
     tags: ["Bekar","Fast","Bekar"],
     rating: "1.0"
 }
-courses = [];
-for (let i = 0 ; i < 5 ; i += 1)
-{    
-    courses.push(ISS);
-}
-
+console.log(data);
+courses = data;
 
 //  Adding small cards 
 const smlCardsrc = document.getElementById("card-small").innerHTML;
