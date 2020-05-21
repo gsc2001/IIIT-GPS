@@ -30,6 +30,7 @@ function renderDataToSmallCards(courses) {
         content += '</div>';
     }
     dump.innerHTML = content;
+    bookMarkHandle()
 }
 
 // end adding small cards
