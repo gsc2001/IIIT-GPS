@@ -9,7 +9,8 @@
     "ratings": 1,
     "year": 1,
     "semester": 2,
-    "review": ["Easy", "Useless", "Dead", "Self learning alot"]
+    "review": ["Easy", "Useless", "Dead", "Self learning alot"],
+    "tags": ["Programming", "Web"]
   },
   {
     "id": 1,
@@ -26,7 +27,8 @@
       "Nice",
       "Well explained",
       "Missed few important topics like segment tree"
-    ]
+    ],
+    "tags": ["Programming", "Algorithms", "Graphs", "Data Structures"]
   },
   {
     "id": 2,
@@ -38,7 +40,8 @@
     "ratings": 4,
     "year": 1,
     "semester": 2,
-    "review": ["Easy", "Nice professor"]
+    "review": ["Easy", "Nice professor"],
+    "tags": ["Maths"]
   },
   {
     "id": 3,
@@ -55,7 +58,8 @@
     "ratings": 2.5,
     "year": 1,
     "semester": 2,
-    "review": ["Very Slow", "Ok"]
+    "review": ["Very Slow", "Ok"],
+    "tags": ["Electronics", "Smart Connectivity"]
   },
   {
     "id": 4,
@@ -71,7 +75,8 @@
       "Mind Blowing",
       "Very Very Difficult",
       "Memory Heirarchy taught very well"
-    ]
+    ],
+    "tags": ["Assembly Language", "Processor"]
   },
   {
     "id": 5,
@@ -83,7 +88,8 @@
     "ratings": 3,
     "year": 1,
     "semester": 1,
-    "review": ["Very Fast", "Skipped Topics", "Too much focus on small topics"]
+    "review": ["Very Fast", "Skipped Topics", "Too much focus on small topics"],
+    "tags": ["Graphs", "Maths", "Logic"]
   },
   {
     "id": 6,
@@ -95,7 +101,8 @@
     "ratings": 2.5,
     "year": 1,
     "semester": 1,
-    "review": ["Ok", "Very Complex"]
+    "review": ["Ok", "Very Complex"],
+    "tags": ["Integration", "Maths"]
   },
   {
     "id": 7,
@@ -107,7 +114,8 @@
     "ratings": 4,
     "year": 1,
     "semester": 1,
-    "review": ["Very nice", "Well explained"]
+    "review": ["Very nice", "Well explained"],
+    "tags": ["Electronics", "Processor", "Logic"]
   },
   {
     "id": 8,
@@ -123,6 +131,7 @@
     "ratings": 4.5,
     "year": 1,
     "semester": 1,
-    "review": ["Good Course", "Many examples given", "Excellent Questions"]
+    "review": ["Good Course", "Many examples given", "Excellent Questions"],
+    "tags": ["Programming", "Algorithms"]
   }
 ]
