@@ -14,18 +14,53 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 
 
-    <!-- script includes bootstrap, font-awesome, jquery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    <!-- script includes bootstrap, font-awesome, jquery,Handlebars -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1fde7af15d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <!-- /script includes -->
+
+    <!-- Templates -->
+    <script id="card-small" type="text/x-handlebars-template">
+        <div class="col2 span-1-of-3">
+            <div class="card">
+                <div class="card-img">
+                    <img src="resources/img/math.webp" />
+                </div>
+                <div class="course-name">
+                    <ul>
+                        <li>
+                            <ion-icon name="return-down-forward-outline"></ion-icon>{{ course.name }}
+                        </li>
+                        <li>
+                            <div class="bookmark-false">
+                                <ion-icon name="bookmark-outline" class="outline"></ion-icon>
+                                <ion-icon name="bookmark" class="solid"></ion-icon>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tags">
+                    <ion-icon name="pricetags-outline"></ion-icon>
+                    <ul>
+                        {{#each course.tags}}
+                        <li>{{ this }}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="rating">
+                    <ion-icon name="star-half-outline"></ion-icon>&lt;{{ course.rating }}&gt;
+                </div>
+                <div class="details">
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+        </div>
+    </script>
+    <!-- /Templates -->
 
 </head>
 
@@ -73,118 +108,10 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Cards -->
-        <section class="course-display container-fluid">
-            <div class="row2">
-
-                <div class="col2 span-1-of-3">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="resources/img/math.webp" />
-                        </div>
-
-                        <div class="course-name">
-                            <ul>
-                                <li>
-                                    <ion-icon name="return-down-forward-outline"></ion-icon>Intro to Software Systems
-                                </li>
-                                <li>
-                                    <div class="bookmark-false">
-                                        <ion-icon name="bookmark-outline" class="outline"></ion-icon>
-                                        <ion-icon name="bookmark" class="solid"></ion-icon>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tags">
-                            <ion-icon name="pricetags-outline"></ion-icon>
-                            <ul>
-                                <li>Bekar</li>
-                                <li>Fast</li>
-                            </ul>
-                        </div>
-                        <div class="rating">
-                            <ion-icon name="star-half-outline"></ion-icon>&lt;rating here&gt;
-                        </div>
-                        <div class="details">
-                            <button class="details-btn">Details</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col2 span-1-of-3">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="resources/img/math.webp" />
-                        </div>
-                        <div class="course-name">
-                            <ul>
-                                <li>
-                                    <ion-icon name="return-down-forward-outline"></ion-icon>Intro
-                                    to Software Systems
-                                </li>
-                                <li>
-                                    <div class="bookmark-false">
-                                        <ion-icon name="bookmark-outline" class="outline"></ion-icon>
-                                        <ion-icon name="bookmark" class="solid"></ion-icon>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tags">
-                            <ion-icon name="pricetags-outline"></ion-icon>
-                            <ul>
-                                <li>Bekar</li>
-                                <li>Fast</li>
-                            </ul>
-                        </div>
-                        <div class="rating">
-                            <ion-icon name="star-half-outline"></ion-icon>&lt;rating here&gt;
-                        </div>
-                        <div class="details">
-                            <button class="details-btn">Details</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col2 span-1-of-3">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="resources/img/math.webp" />
-                        </div>
-                        <div class="course-name">
-                            <ul>
-                                <li>
-                                    <ion-icon name="return-down-forward-outline"></ion-icon>Intro
-                                    to Software Systems
-                                </li>
-                                <li>
-                                    <div class="bookmark-false">
-                                        <ion-icon name="bookmark-outline" class="outline"></ion-icon>
-                                        <ion-icon name="bookmark" class="solid"></ion-icon>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tags">
-                            <ion-icon name="pricetags-outline"></ion-icon>
-                            <ul>
-                                <li>Bekar</li>
-                                <li>Fast</li>
-                            </ul>
-                        </div>
-                        <div class="rating">
-                            <ion-icon name="star-half-outline"></ion-icon>&lt;rating here&gt;
-                        </div>
-                        <div class="details">
-                            <button class="details-btn">Details</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+    <!-- Cards -->
+    <section id="course-cards" class="course-display container-fluid"></section>
 
 
 </body>
