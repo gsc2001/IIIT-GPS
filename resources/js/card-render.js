@@ -6,20 +6,40 @@ var ISS = {
     rating: "1.0"
 }
 courses = [];
-for (let i = 0 ; i < 3 ; i += 1)
+for (let i = 0 ; i < 5 ; i += 1)
 {    
     courses.push(ISS);
 }
 
+
+//  Adding small cards 
 const smlCardsrc = document.getElementById("card-small").innerHTML;
 const template = Handlebars.compile(smlCardsrc);
 const dump = document.getElementById('course-cards');
-dump.innerHTML = "<div class="
+let content = '';
+let cnt = 0;
 for (let crs of courses)
 {
+    if(cnt == 0)
+    {
+        content += '<div class="row2">'
+    }
     const context = {
         course : crs,
     }
     const compiled = template(context);
-    dump.innerHTML += compiled
+    content += compiled
+    cnt ++;
+    if(cnt == 3)
+    {
+        cnt = 0;
+        content += "</div>";
+    }
 }
+if(cnt != 0)
+{
+        content += '</div>';
+}
+dump.innerHTML = content;
+
+// end adding small cards
