@@ -1,21 +1,18 @@
-$('document').ready(function () {
-    updateBookmarks();
-})
 function updateBookmarks() {
     var courses_id = JSON.parse(localStorage.getItem(SECRET_KEY));
     var courses = data.filter((obj) => {
-        return courses_id.includes(obj.id + ''); // Convertinf obj.id to string
-    });
-    renderDataToSmallCards(courses);
+        return courses_id.includes(obj.id + ''); // Convert obj.id to string
+    })
+    const dump = document.getElementById('course-cards');
+    renderDataToSmallCards(courses,dump,true);
+    bookMarkHandle(true);
 }
 
-// Creating temp data
-
-function renderDataToSmallCards(courses) {
-    //  Adding small cards 
+function renderDataToSmallCards(courses, dump,remove_on_disable) {
+    var bookmarked_courses = JSON.parse(localStorage.getItem(SECRET_KEY));
+    console.log(bookmarked_courses);
     const smlCardsrc = document.getElementById("card-small").innerHTML;
     const template = Handlebars.compile(smlCardsrc);
-    const dump = document.getElementById('course-cards');
     let content = '';
     let cnt = 0;
     for (let crs of courses) {
@@ -24,6 +21,7 @@ function renderDataToSmallCards(courses) {
         }
         const context = {
             course: crs,
+            status: (bookmarked_courses.includes(crs.id + '') + '')
         }
         const compiled = template(context);
         content += compiled
@@ -36,8 +34,28 @@ function renderDataToSmallCards(courses) {
     if (cnt != 0) {
         content += '</div>';
     }
-    dump.innerHTML = content;
-    bookMarkHandle()
+    if(remove_on_disable)
+        dump.innerHTML = "";
+    dump.innerHTML += content;
 }
 
-// end adding small cards
+function yearRender(year)
+{
+    const yearSrc = document.getElementById('year').innerHTML;
+    const template = Handlebars.compile(yearSrc);
+    const dump = document.getElementById('year-content');
+    dump.innerHTML = template({
+        year:year,
+    });
+    const dumpsm1 = document.getElementById('course-cards-' + year + '-1');
+    const dumpsm2 = document.getElementById('course-cards-' + year + '-2');
+    const coursessm1 = data.filter( obj =>{
+       return obj.year == year && obj.semester == 1;
+    });
+    const coursessm2 = data.filter( obj =>{
+       return obj.year == year && obj.semester == 2;
+    });
+    renderDataToSmallCards(coursessm1,dumpsm1,false);
+    renderDataToSmallCards(coursessm2,dumpsm2,false);
+}
+
