@@ -13,6 +13,7 @@
 
 html,
 body {
+  height: 100%;
   background-color: #fff;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
@@ -377,4 +378,72 @@ h2:after {
 .semester {
   /* margin-left: auto; */
   padding-top: 150px;
+}
+
+/***********************************/
+/* COURSE PAGE */
+/* ****************************************/
+
+.course-page{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.course-page-title {
+  background-color: orange;
+  position: absolute;
+  top: 12%;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: middle-left;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 40%
+}
+
+.course-page-title:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+.course-page {
+  position: relative;
+}
+
+.main-card-box {
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.open-close {
+  position: absolute;
+  top: 60%;
+  box-shadow: 0 0 5px #555;
+  padding: 20px;
+}
+
+.open-close>p {
+  float: left;
+  width: 80%;
+}
+
+.open>p,
+.open>.open-close-button {
+  border-bottom: 2px solid #555;
+}
+
+.open-close-button {
+  float: right;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
 }
