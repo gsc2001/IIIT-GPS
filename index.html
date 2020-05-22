@@ -30,9 +30,9 @@
                 <div class="card-img">
                     <img src="resources/img/math.webp" />
                 </div>
-                <div class="course-name">
-                    <ul>
-                        <li>
+                <ul>
+                
+                        <li class="course-name">
                             <ion-icon name="return-down-forward-outline"></ion-icon>{{ course.name }}
                         </li>
                         <li>
@@ -41,16 +41,14 @@
                                 <ion-icon name="bookmark" class="solid"></ion-icon>
                             </div>
                         </li>
-                    </ul>
-                </div>
+                
                 <div class="tags">
                     <ion-icon name="pricetags-outline"></ion-icon>
-                    <ul>
                         {{#each course.tags}}
                         <li>{{ this }}</li>
                         {{/each}}
-                    </ul>
                 </div>
+            </ul>
                 <div class="rating">
                     <ion-icon name="star-half-outline"></ion-icon>&lt;{{ course.ratings }}&gt;
                 </div>
