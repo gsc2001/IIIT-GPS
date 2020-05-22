@@ -251,9 +251,9 @@ svg {
 
 .bookmark-false{
     position: absolute;
-    top: -2vh;
-    right: 0vh;
-    font-size: 8vh;
+    top: -1vh;
+    right: -0.5vw;
+    font-size: 50px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -272,9 +272,9 @@ svg {
 
 .bookmark-true{
     position: absolute;
-    top: -2vh;
-    right: 0vh;
-    font-size: 8vh;
+    top: -1vh;
+    right: -0.5vw;
+    font-size: 50px;
     background-color: transparent;
     cursor: pointer;
 }
