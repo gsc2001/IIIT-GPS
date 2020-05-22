@@ -14,7 +14,6 @@ function renderDataToSmallCards(courses, dump,remove_on_disable) {
     var bookmarked_courses = JSON.parse(localStorage.getItem(SECRET_KEY));
     if(!bookmarked_courses)
         bookmarked_courses = [];
-    console.log(bookmarked_courses);
     const smlCardsrc = document.getElementById("card-small").innerHTML;
     const template = Handlebars.compile(smlCardsrc);
     let content = '';
