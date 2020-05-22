@@ -251,10 +251,11 @@ svg {
 
 .bookmark-false{
     position: absolute;
-    top: 0;
-    right: 1vh;
-    font-size: 4vh;
-    background-color: #fff;
+    top: -2vh;
+    right: 0vh;
+    font-size: 8vh;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .bookmark-false .solid{
@@ -271,10 +272,11 @@ svg {
 
 .bookmark-true{
     position: absolute;
-    top: 0;
-    right: 1vh;
-    font-size: 4vh;
-    background-color: #fff;
+    top: -2vh;
+    right: 0vh;
+    font-size: 8vh;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .bookmark-true .solid{
