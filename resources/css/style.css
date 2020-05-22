@@ -20,19 +20,6 @@ body {
   color:#000;
   text-rendering: optimizeLegibility;
   font-family: 'Lato', sans-serif;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0.7))
-    ),
-    url(../img/study.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/study.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 
@@ -71,6 +58,19 @@ a:active {
 
 .header {
   height: 100vh;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(../img/study.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/study.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -332,3 +332,47 @@ svg {
 
 /* /Card css */
 
+/*Semesters*/
+
+section {
+  padding: 80px 0;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #118cff;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+.semester {
+  /* margin-left: auto; */
+  padding-top: 150px;
+}

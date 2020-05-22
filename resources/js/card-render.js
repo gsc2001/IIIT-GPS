@@ -36,7 +36,8 @@ function renderDataToSmallCards(courses) {
     if (cnt != 0) {
         content += '</div>';
     }
-    dump.innerHTML = content;
+    dump.insertAdjacentHTML('beforeend',content);
+    // dump.innerHTML = content;
     bookMarkHandle()
 }
 
