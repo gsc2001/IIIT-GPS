@@ -253,7 +253,7 @@ svg {
     height: 70px;   /*34*2*/
 }
 
-.tags li {
+.tags li:not(:first-of-type) {
     font-size: 14px;
     padding: 1px 8px;
     background-color: goldenrod;
