@@ -13,7 +13,7 @@ function bookMarkHandle (remove_on_disable){
             else {
                 removeCourse(value);
                 if(remove_on_disable == true)
-                    $(this).parent().closest("div").fadeOut(500,updateBookmarks);
+                    $(this).parent().closest("div #ineedyou").fadeOut(500,updateBookmarks);
             }
         });
     };

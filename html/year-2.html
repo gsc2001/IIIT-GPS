@@ -31,36 +31,45 @@
     <!-- Small card template -->
     <script id="card-small" type="text/x-handlebars-template">
         <div class="col2 span-1-of-3">
-            <div class="card">
+            <div class="card" id="ineedyou">
+            
                 <div class="card-img">
                     <img src="../resources/img/math.webp" />
                 </div>
-                <ul>
                 
+                <div class="course-name">
+                    <ul>
                         <li class="course-name">
                             <ion-icon name="return-down-forward-outline"></ion-icon>{{ course.name }}
                         </li>
                         <li>
-                            <div class="bookmark-{{ status }}" id="bookmark-holder" value={{ course.id }}>
+                            <div class="bookmark-{{status}}" id="bookmark-holder" value={{ course.id }}>
                                 <ion-icon name="bookmark-outline" class="outline"></ion-icon>
                                 <ion-icon name="bookmark" class="solid"></ion-icon>
                             </div>
                         </li>
-                
+                    </ul>
+                </div>
                 <div class="tags">
-                    <ion-icon name="pricetags-outline"></ion-icon>
+                    <ul>
+                        <li><ion-icon name="pricetags-outline"></ion-icon></li>
+                        
                         {{#each course.tags}}
                         <li>{{ this }}</li>
                         {{/each}}
+                    </ul>
                 </div>
-            </ul>
+
                 <div class="rating">
                     <ion-icon name="star-half-outline"></ion-icon>&lt;{{ course.ratings }}&gt;
                 </div>
+                
                 <div class="details">
-                    <button class="details-btn">Details</button>
+                    <a class="details-btn">Details</a>
                 </div>
+                
             </div>
+            
         </div>
     </script>
     <!-- /Small card template -->

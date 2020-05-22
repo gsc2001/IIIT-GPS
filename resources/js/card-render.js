@@ -5,6 +5,7 @@ function updateBookmarks() {
     })
     const dump = document.getElementById('course-cards');
     renderDataToSmallCards(courses,dump,true);
+    bookMarkHandle(true);
 }
 
 function renderDataToSmallCards(courses, dump,remove_on_disable) {
