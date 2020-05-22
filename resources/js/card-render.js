@@ -1,7 +1,15 @@
-$('document').ready(function(){
-    var courses = data;
-    renderDataToSmallCards(courses);
+$('document').ready(function () {
+    updateBookmarks();
 })
+function updateBookmarks() {
+    var courses_id = JSON.parse(localStorage.getItem(SECERET_KEY));
+    console.log(courses_id);
+    var courses = data.filter((obj) => {
+        return courses_id.includes(obj.id + ''); // Convertinf obj.id to string
+    });
+    renderDataToSmallCards(courses);
+}
+
 // Creating temp data
 
 function renderDataToSmallCards(courses) {
