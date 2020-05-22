@@ -4,8 +4,6 @@
     width: 100%;
     padding: 0 2%;
   }
-
-
 }
 
 /* Small tablet to big tablet */
@@ -26,5 +24,15 @@
   }
   h1 {
     font-size: 180%;
+  }
+  .icon {
+    font-size: 300%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .icon {
+    font-size: 250%;
+    margin-left: 5px;
   }
 }
