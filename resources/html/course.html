@@ -23,8 +23,8 @@
     <!-- script includes bootstrap, font-awesome, jquery,Handlebars -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1fde7af15d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <!-- /script includes -->
@@ -35,7 +35,7 @@
 
     <!-- navbar -->
     <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top bg-chng">
-        
+
         <div class="home">
             <div class="center">
                 <button class="home-btn">
@@ -49,70 +49,102 @@
         </div>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="my-1 mx-2 close text-white hidden"><i class="fas fa-times" style="color:white;"></i>
-            </span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link navbar-item" href="#">I Year</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbar-item" href="#">II Year</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbar-item" href="#">III Year</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbar-item" href="#">IV Year</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-        
-        <div class="course-page">
-        
-            <h2 class="course-page-title">Intro to Software Systems</h2>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="my-1 mx-2 close text-white hidden"><i class="fas fa-times" style="color:white;"></i>
+        </span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link navbar-item" href="#">I Year</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-item" href="#">II Year</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-item" href="#">III Year</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-item" href="#">IV Year</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="course-page">
+
+    <div class="course-page-title">Intro to Software Systems</div>
+
+    <div class="col2 span-2-of-7 main-card-box">
+        <div class="card" id="ineedyou">
+
+            <div class="card-img">
+                <img src="../img/math.webp" />
+            </div>
+
+            <div class="course-name" >
+                <ul>
+                    <li class="course-name">
+                        <ion-icon name="return-down-forward-outline"></ion-icon>Intro to Software Systems
+                    </li>
+                        <!-- <li>
+                            <div class="bookmark-false" id="bookmark-holder" value=1>
+                                <ion-icon name="bookmark-outline" class="outline"></ion-icon>
+                                <ion-icon name="bookmark" class="solid"></ion-icon>
+                            </div>
+                        </li> -->
+                        <div class="tags">
+                            <ul>
+                                <li><ion-icon name="pricetags-outline"></ion-icon></li>
+
+                                <li>Web</li>
+                                <li>Programming</li>
+                            </ul>
+                        </div>
+                        <div class="other-details">
+                            <li class="instructor">
+                                <ion-icon name="person-outline"></ion-icon>Instructor <ion-icon name="arrow-forward-outline"></ion-icon>Raggu Reddy(but he was never there so.. learn it yourself :)
+                            </li>
+                            <li  class="pace">
+                                <ion-icon name="timer-outline"></ion-icon>Pace <ion-icon name="arrow-forward-outline"></ion-icon> Hell Fast
+                            </li>
+                            <li  class="difficulty">
+                                <ion-icon name="body-outline"></ion-icon>Difficulty <ion-icon name="arrow-forward-outline"></ion-icon> Oh..ho..ho you will know
+                            </li>
+                            <li class="durations">
+                                <ion-icon name="time-outline"></ion-icon>Duration <ion-icon name="arrow-forward-outline"></ion-icon> Half-Sem
+                            </li>
+                            <div class="rating">
+                                <ion-icon name="star-half-outline"></ion-icon>&lt;1&gt;
+                            </div> 
+                        </div>
+                    </ul>
+                </div>               
+            </div>
             
-            <!-- <div class="span-1-of-3 main-card-box">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="../img/math.webp">
-                    </div>
-                    <div class="course-name">
-                        <ul>
-                            <li>
-                                <ion-icon name="return-down-forward-outline"></ion-icon>ISS
-                            </li>
-                            <li>
-                                <div class="bookmark-false">
-                                    i
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tags">
-                        i
-                        <ul>
-                            <li>Bekar</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
-        
-            <section class="open-close open span-2-of-3">
-                <p>Syllabus</p>
-                <a class="open-close-button">+</a>
-                <div class="clearfix"></div>
-                <div class="open-close-syllabus">
-                    <p>fing</p>
-                </div>
-                <div class="clearfix"></div>
-            </section>
-        
         </div>
+        <section class="open-close open span-1-of-2">
+            <p class="syllabus-title">Syllabus</p>
+            <!-- <a class="open-close-button">+</a> -->
+            <div class="clearfix"></div>
+            <div class="open-close-syllabus">
+                <p>fing</p>
+            </div>
+            <ion-icon name="chevron-down-outline" class="viewmore"></ion-icon>
+            <div class="clearfix"></div>
+        </section>
+        <section class="open-close open resources span-1-of-2">
+            <p class="resources-title">Resources</p>
+            <!-- <a class="open-close-button">+</a> -->
+            <div class="clearfix"></div>
+            <div class="open-close-syllabus">
+                <p>fing</p>
+            </div>
+            <ion-icon name="chevron-down-outline" class="viewmore"></ion-icon>
+            <div class="clearfix"></div>
+        </section>
+    </div>
 
 </body>
 <script src="../../dev-data/data.js"></script>
