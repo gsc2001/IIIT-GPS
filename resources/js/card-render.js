@@ -1,5 +1,7 @@
 function updateBookmarks() {
     var courses_id = JSON.parse(localStorage.getItem(SECRET_KEY));
+    if(!courses_id)
+        courses_id = [];
     var courses = data.filter((obj) => {
         return courses_id.includes(obj.id + ''); // Convert obj.id to string
     })
@@ -10,6 +12,8 @@ function updateBookmarks() {
 
 function renderDataToSmallCards(courses, dump,remove_on_disable) {
     var bookmarked_courses = JSON.parse(localStorage.getItem(SECRET_KEY));
+    if(!bookmarked_courses)
+        bookmarked_courses = [];
     console.log(bookmarked_courses);
     const smlCardsrc = document.getElementById("card-small").innerHTML;
     const template = Handlebars.compile(smlCardsrc);
