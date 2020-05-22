@@ -16,12 +16,18 @@
     .card-img {
     height: 150px;
     }
+  .row {
+    padding: 0 2%;
+  }
 }
 
 /* Small tablet to big tablet */
 @media only screen and (max-width: 1023px) {
   body {
     font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
   }
 }
 
@@ -30,12 +36,19 @@
   body {
     font-size: 16px;
   }
+  section {
+    padding: 30px 0;
+  }
 
-  .hero-text-box {
+  .hero-text-box,
+  .row {
     padding: 0 4%;
   }
   h1 {
     font-size: 180%;
+  }
+  h2 {
+    font-size: 150%;
   }
   .icon {
     font-size: 300%;
@@ -59,4 +72,11 @@
     .card-img {
     height: 100px;
     }
+  section {
+    padding: 25px 0;
+  }
+
+  .home{
+    width: 150px;
+  }
 }

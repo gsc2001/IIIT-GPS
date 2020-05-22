@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon</title>
-
+    <title>I Year</title>
+    
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -31,13 +31,11 @@
     <script id="card-small" type="text/x-handlebars-template">
         <div class="col2 span-1-of-3">
             <div class="card">
-            
                 <div class="card-img">
                     <img src="resources/img/math.webp" />
                 </div>
+                <ul>
                 
-                <div class="course-name">
-                    <ul>
                         <li class="course-name">
                             <ion-icon name="return-down-forward-outline"></ion-icon>{{ course.name }}
                         </li>
@@ -47,28 +45,21 @@
                                 <ion-icon name="bookmark" class="solid"></ion-icon>
                             </div>
                         </li>
-                    </ul>
-                </div>
+                
                 <div class="tags">
-                    <ul>
-                        <li><ion-icon name="pricetags-outline"></ion-icon></li>
-                        
+                    <ion-icon name="pricetags-outline"></ion-icon>
                         {{#each course.tags}}
                         <li>{{ this }}</li>
                         {{/each}}
-                    </ul>
                 </div>
-
+            </ul>
                 <div class="rating">
                     <ion-icon name="star-half-outline"></ion-icon>&lt;{{ course.ratings }}&gt;
                 </div>
-                
                 <div class="details">
-                    <a class="details-btn">Details</a>
+                    <button class="details-btn">Details</button>
                 </div>
-                
             </div>
-            
         </div>
     </script>
     <!-- /Templates -->
@@ -78,8 +69,18 @@
 <body>
 
     <!-- navbar -->
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand"><i class="fas fa-graduation-cap icon"></i></a>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top bg-chng">
+        <a class="navbar-brand" href="index.html"><div class="home">
+            <div class="center">
+                <button class="home-btn">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                        <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="bg-line" />
+                        <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="hl-line" />
+                    </svg>
+                    <span>My Courses</span>
+                </button>
+            </div>
+        </div></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -103,31 +104,23 @@
             </ul>
         </div>
     </nav>
-    <div class="header">
-        <div class="hero-text-box">
-            <h1>Confused!!<br />Check out the courses.</h1>
-            <div class="home">
-                <div class="center">
-                    <button class="home-btn">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                            <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="bg-line" />
-                            <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="hl-line" />
-                        </svg>
-                        <span>My Courses</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Cards -->
-    <section id="course-cards" class="course-display container-fluid"></section>
+    <section id="course-cards" class="semester course-display container-fluid" value="1">
+        <div class="row">
+            <h2>I st semester</h2>
+        </div>
+    </section>
+    <section id="course-cards" class="semester course-display container-fluid" value="2">
+        <div class="row">
+            <h2>II nd semester</h2>
+        </div>
+    </section>
 
 
 </body>
 <script src="dev-data/data.js"></script>
 <script src="resources/js/script.js"></script>
-<script src="resources/js/navcolorchange.js"></script>
 <script src="resources/js/bookmark-handler.js"></script>
 <script src="resources/js/card-render.js"></script>
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>

@@ -5,11 +5,14 @@ function bookMarkHandle() {
             this.classList.toggle('bookmark-false');
             this.classList.toggle('bookmark-true');
             let value = this.getAttribute("value");
-            if (this.classList.contains('bookmark-true'))
+            if (this.classList.contains('bookmark-true')) {
                 addCourse(value);
-            else
+                updateBookmarks();
+            }
+            else {
                 removeCourse(value);
-            updateBookmarks();
+                $(this).parent().closest("div").fadeOut(500, updateBookmarks);
+            }
         });
     };
 };
