@@ -279,6 +279,22 @@ svg {
     display: inline-block;
 }
 
+.bookmark-true{
+    position: absolute;
+    top: 0;
+    right: 1vh;
+    font-size: 4vh;
+    background-color: #fff;
+}
+
+.bookmark-true .solid{
+  display: inline-block;
+}
+
+.bookmark-true .outline{
+  display: none;
+}
+
 .card ion-icon {
     vertical-align: middle;
     color: #02c2f7;
