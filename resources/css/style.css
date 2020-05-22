@@ -196,6 +196,7 @@ svg {
     margin: auto;
     box-shadow: 0px 0px 20px #969695;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .card div {
@@ -268,12 +269,18 @@ svg {
 
 .bookmark-false,
 .bookmark-true {
+/*
     position: absolute;
     top: -1vh;
     right: -0.5vw;
     font-size: 50px;
     background-color: transparent;
     cursor: pointer;
+*/
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 2.5rem;
 }
 
 .bookmark-false .solid{
@@ -286,15 +293,6 @@ svg {
 
 .bookmark-false:hover .solid{
     display: inline-block;
-}
-
-.bookmark-true{
-    position: absolute;
-    top: -1vh;
-    right: -0.5vw;
-    font-size: 50px;
-    background-color: transparent;
-    cursor: pointer;
 }
 
 .bookmark-true .solid{
@@ -331,10 +329,6 @@ svg {
     transition: .35s;
     border-radius: 30px;
     padding: 5px;
-/*
-    width: 30%;
-    margin-left: 65%;
-*/
 }
 
 .details-btn:hover{
