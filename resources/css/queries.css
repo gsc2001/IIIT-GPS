@@ -4,6 +4,18 @@
     width: 100%;
     padding: 0 2%;
   }
+  .course-name {
+      height: 6rem;
+  }
+    .tags ul {
+        height: 105px;   /*34*3*/
+    }
+    .card div:not(:first-child) {
+    padding: 5px 8px;
+    }
+    .card-img {
+    height: 150px;
+    }
 }
 
 /* Small tablet to big tablet */
@@ -35,4 +47,16 @@
     font-size: 250%;
     margin-left: 5px;
   }
+  .course-name {
+      height: auto;
+  }
+.tags ul {
+        height: auto;
+    }
+    .card div:not(:first-child) {
+    padding: 2px 8px;
+    }
+    .card-img {
+    height: 100px;
+    }
 }
