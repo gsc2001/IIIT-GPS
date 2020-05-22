@@ -20,10 +20,6 @@ body {
   color:#000;
   text-rendering: optimizeLegibility;
   font-family: 'Lato', sans-serif;
-
-}
-
-.home-page {
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -38,6 +34,7 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
 
 /*-------------------------------------*/
 /*Reusable Components*/
