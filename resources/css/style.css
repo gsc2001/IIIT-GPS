@@ -191,9 +191,17 @@ svg {
 
 .card {
     text-align: left;
+    position: relative;
+    display: block;
+    height: 80vh;
+    min-height: 60vh;
     width: 100%;
     margin: auto;
     box-shadow: 0px 0px 20px #969695;
+}
+
+.course-name{
+  font-size: 4vh;
 }
 
 .card div:not(:first-child) {
@@ -221,11 +229,14 @@ svg {
 
 .card ul {
     list-style: none;
-    display: inline-block;
+    display: block;
+    min-height: 3vh;
+    overflow: hidden;
 }
 
 .card li {
     display: inline-block;
+    min-height: 3vh;
     border-radius: 50px;
     padding: 1px 8px
 }
@@ -236,22 +247,14 @@ svg {
     color: #705e5b;
 }
 
-.course-name{
-    font-size: 2rem;
-    position: relative;
-    margin-right: 10px;
-/*    margin-left: 30px;*/
-}
-
 /* Bookmark course */
-.course-name li:not(:first-of-type) {
-    padding: 0;
-}
 
 .bookmark-false{
     position: absolute;
-    top: 0px;
-    right: 3px;
+    top: 0;
+    right: 1vh;
+    font-size: 4vh;
+    background-color: #fff;
 }
 
 .bookmark-false .solid{
@@ -266,6 +269,22 @@ svg {
     display: inline-block;
 }
 
+.bookmark-true{
+    position: absolute;
+    top: 0;
+    right: 1vh;
+    font-size: 4vh;
+    background-color: #fff;
+}
+
+.bookmark-true .solid{
+  display: inline-block;
+}
+
+.bookmark-true .outline{
+  display: none;
+}
+
 .card ion-icon {
     vertical-align: middle;
     color: #02c2f7;
@@ -275,16 +294,17 @@ svg {
 
 /* Show full course page button */
 .details{
-    display: inline-block;
-    position: relative;
-    width: 100%;
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    width: 45%;
     padding: 10px 20px;
 }
 
 .details-btn{
-    float: right;
-    width: 150px;
-    height: 40px;
+    width: 90%;
+    height: 1%;
     line-height: 30px;
     font-weight: bold;
     text-decoration: none;
@@ -308,6 +328,7 @@ svg {
   background-color: #fff;
   width: 100%;
 }
+
 
 /* /Card css */
 
