@@ -5,21 +5,22 @@
 /*Basic Setup*/
 /*-------------------------------------*/
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html,
 body {
-  background-color: #fff;
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  color:#000;
-  text-rendering: optimizeLegibility;
-  font-family: 'Lato', sans-serif;
+height: 100%;
+background-color: #fff;
+font-family: "Lato", "Arial", sans-serif;
+font-weight: 300;
+font-size: 20px;
+color:#000;
+text-rendering: optimizeLegibility;
+font-family: 'Lato', sans-serif;
 }
 
 
@@ -27,29 +28,29 @@ body {
 /*Reusable Components*/
 /*-------------------------------------*/
 h1 {
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 240%;
-  word-spacing: 4px;
-  letter-spacing: 1px;
+font-weight: 300;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 20px;
+color: #fff;
+font-size: 240%;
+word-spacing: 4px;
+letter-spacing: 1px;
 }
 
 /*---------LINKS----------*/
 
 a:link,
 a:visited {
-  color: #fff;
-  text-decoration: none;
-  padding-bottom: 1px;
+color: #fff;
+text-decoration: none;
+padding-bottom: 1px;
 }
 
 a:hover,
 a:active {
-  color: #fff;
-  border-bottom: 1px solid transparent;
+color: #fff;
+border-bottom: 1px solid transparent;
 }
 
 /*-------------------------------------*/
@@ -57,127 +58,127 @@ a:active {
 /*-------------------------------------*/
 
 .header {
-  height: 100vh;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0.7))
-    ),
-    url(../img/study.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/study.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+height: 100vh;
+background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  from(rgba(0, 0, 0, 0.7)),
+  to(rgba(0, 0, 0, 0.7))
+  ),
+url(../img/study.jpg);
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+url(../img/study.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }
 
 .hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+position: absolute;
+width: 1140px;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
 }
 
 
 /* Navi */
 
 nav{
-  font-size: 120%;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
+font-size: 120%;
+color: #fff;
+font-family: 'Montserrat', sans-serif;
 }
 
 .bg-chng{
-  background-color: #0798b5;
+background-color: #0798b5;
 }
 .hidden{
-  display:none
+display:none
 }
 .navbar{
-  transition: ease 0.5s;
+transition: ease 0.5s;
 }
 .navbar-dark .navbar-nav .nav-link{
-  color: rgba(255,255,255,0.8);
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-bottom: 3px solid transparent;
+color: rgba(255,255,255,0.8);
+padding-left: 2rem;
+padding-right: 2rem;
+border-bottom: 3px solid transparent;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .active {
-  color: rgba(255,255,255);
-  border-bottom: 3px solid  orange;
+color: rgba(255,255,255);
+border-bottom: 3px solid  orange;
 }
 
 .icon {
-  font-size: 350%;
-  margin-left: 10px;
+font-size: 350%;
+margin-left: 10px;
 }
 /* Home button */
 
 
 .home {
-  width: 200px;
-  height: 100px;
-  left: 18%;
-  top: 62%;
-  /* transform: translate(-50%, -50%); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+width: 200px;
+height: 100px;
+left: 18%;
+top: 62%;
+/* transform: translate(-50%, -50%); */
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .center {
-  width: 180px;
-  height: 60px;
-  position: absolute;
+width: 180px;
+height: 60px;
+position: absolute;
 }
 
 .home-btn {
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid rgb(17, 140, 255);
-  outline: none;
-  transition: 1s ease-in-out;
-  border-radius: 10px;
+width: 180px;
+height: 60px;
+cursor: pointer;
+background: transparent;
+border: 1px solid rgb(17, 140, 255);
+outline: none;
+transition: 1s ease-in-out;
+border-radius: 10px;
 }
 
 svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-  border-radius: 10px;
+position: absolute;
+left: 0;
+top: 0;
+fill: none;
+stroke: #fff;
+stroke-dasharray: 150 480;
+stroke-dashoffset: 150;
+transition: 1s ease-in-out;
+border-radius: 10px;
 }
 
 .home-btn:hover {
-  transition: 1s ease-in-out;
-  background: white;
-  border-radius: 10px;
+transition: 1s ease-in-out;
+background: white;
+border-radius: 10px;
 }
 
 .home-btn:hover svg {
-  stroke-dashoffset: -480;
-  border-radius:  10px;
+stroke-dashoffset: -480;
+border-radius:  10px;
 }
 
 .home-btn span {
-  color: white;
-  font-size: 23px;
-  font-weight: 180;
+color: white;
+font-size: 23px;
+font-weight: 180;
 }
 
 .home-btn:hover span {
-    color : #0798b5;
+color : #0798b5;
 }
 
 /***********************************/
@@ -185,164 +186,164 @@ svg {
 /* ****************************************/
 
 .row2{
-  max-width: 1200px;
-  margin: 0 auto;
+max-width: 1200px;
+margin: 0 auto;
 }
 
 .card {
-    text-align: left;
-    display: block;
-    position: relative;
-    width: 100%;
-    margin: auto;
-    box-shadow: 0px 0px 20px #969695;
-    padding-bottom: 10px;
+text-align: left;
+display: block;
+position: relative;
+width: 100%;
+margin: auto;
+box-shadow: 0px 0px 20px #969695;
+padding-bottom: 10px;
 }
 
 .card div {
-    box-sizing: content-box;
+box-sizing: content-box;
 }
 
 .course-name{
-    font-size: 1.5rem;
-    line-height: 2rem;
-    height: 4rem;
+font-size: 1.5rem;
+line-height: 2rem;
+height: 4rem;
 }
 
 .course-name ul li:not(:first-of-type) {
-    margin: 0;
+margin: 0;
 }
 
 .card div:not(:first-child) {
-    padding: 10px 8px;
+padding: 10px 8px;
 }
 
 .card-img {
-    width: 100%;
-    height: 250px;
-    margin-bottom: 10px;
-    background-color: #0798b5;
-    position: relative;
-    overflow: hidden;
+width: 100%;
+height: 250px;
+margin-bottom: 10px;
+background-color: #0798b5;
+position: relative;
+overflow: hidden;
 }
 
 .card img {
-    width: 100%;
-    border-radius: 5px;
-    opacity: 60%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+width: 100%;
+border-radius: 5px;
+opacity: 60%;
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
 }
 
 .card ul {
-    list-style: none;
+list-style: none;
 }
 
 .card li {
-    display: inline-block;
-    margin: 5px;
+display: inline-block;
+margin: 5px;
 }
 
 .tags li {
-    line-height: 22px;
+line-height: 22px;
 }
 
 .tags ul {
-    height: 70px;   /*34*2*/
+height: 70px;   /*34*2*/
 }
 
 .tags li:not(:first-of-type) {
-    font-size: 14px;
-    padding: 1px 8px;
-    background-color: goldenrod;
-    color: #705e5b;
-    border-radius: 50px;
+font-size: 14px;
+padding: 1px 8px;
+background-color: goldenrod;
+color: #705e5b;
+border-radius: 50px;
 }
 
 .rating {
-    margin-top: 0;
+margin-top: 0;
 }
 
 /* Bookmark course */
 
 .bookmark-false,
 .bookmark-true {
-    position: absolute;
-    top: -1vh;
-    right: -0.5vw;
-    font-size: 50px;
-    background-color: transparent;
-    cursor: pointer;
+position: absolute;
+top: -1vh;
+right: -0.5vw;
+font-size: 50px;
+background-color: transparent;
+cursor: pointer;
 }
 
 .bookmark-false .solid{
-    display: none;
+display: none;
 }
 
 .bookmark-false:hover .outline{
-    display: none;
+display: none;
 }
 
 .bookmark-false:hover .solid{
-    display: inline-block;
+display: inline-block;
 }
 
 .bookmark-true{
-    position: absolute;
-    top: -1vh;
-    right: -0.5vw;
-    font-size: 50px;
-    background-color: transparent;
-    cursor: pointer;
+position: absolute;
+top: -1vh;
+right: -0.5vw;
+font-size: 50px;
+background-color: transparent;
+cursor: pointer;
 }
 
 .bookmark-true .solid{
-  display: inline-block;
+display: inline-block;
 }
 
 .bookmark-true .outline{
-  display: none;
+display: none;
 }
 
 .card ion-icon {
-    vertical-align: middle;
-    color: #02c2f7;
-    margin-bottom: 2px;
-    margin-right: 5px;
+vertical-align: middle;
+color: #02c2f7;
+margin-bottom: 2px;
+margin-right: 5px;
 }
 
 /* Show full course page button */
 .details {
-    text-align: right;
-    margin-right: 20px;
+text-align: right;
+margin-right: 20px;
 }
 
 .details-btn{
-    line-height: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    background: #008c9c;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: 3px solid #008c9c;
-    transition: .35s;
-    border-radius: 30px;
-    padding: 5px;
+line-height: 30px;
+font-weight: bold;
+text-decoration: none;
+background: #008c9c;
+text-align: center;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+border: 3px solid #008c9c;
+transition: .35s;
+border-radius: 30px;
+padding: 5px;
 /*
-    width: 30%;
-    margin-left: 65%;
-*/
+  width: 30%;
+  margin-left: 65%;
+  */
 }
 
 .details-btn:hover{
-    opacity: 80%;
-    color: #f8f8ff;
-    cursor: pointer;
-    border: 3px solid #008c9c;
+  opacity: 80%;
+  color: #f8f8ff;
+  cursor: pointer;
+  border: 3px solid #008c9c;
 }
 
 .course-display
@@ -366,35 +367,112 @@ section {
 }
 
 h2 {
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
 h2:after {
-    display: block;
-    height: 2px;
-    background-color: #118cff;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
+  display: block;
+  height: 2px;
+  background-color: #118cff;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .row:before,
 .row:after {
-    content:"";
-    display:table;
+  content:"";
+  display:table;
 }
 .row:after {
-    clear:both;
+  clear:both;
 }
 
 .semester {
   /* margin-left: auto; */
   padding-top: 150px;
+}
+
+/***********************************/
+/* COURSE PAGE */
+/* ****************************************/
+
+.course-page{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.course-page-title {
+  background-image: linear-gradient(to bottom right, #eba13b,#34cdeb);
+  position: absolute;
+  top: 12.2%;
+  font-size: 260%;
+  word-spacing: 2px;
+  text-align: left;
+  margin-bottom: 30px;
+  padding-top: 12%;
+  padding-left: 5%;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 50%;
+}
+
+.main-card-box {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.main-card-box .course-name,
+.main-card-box .tags ul{
+  height: auto;
+}
+
+.open-close {
+  position: absolute;
+  top: 70%;
+  box-shadow: 0 0 5px #555;
+  padding: 20px;
+  border-radius: 3%;
+  margin-left: 8%;
+}
+
+.open-close>p {
+  float: left;
+  width: 100%;
+  font-size: 200%;
+}
+
+.open>p,
+.open>.open-close-button {
+  border-bottom: 2px solid #555;
+}
+
+.viewmore{
+  float: right;
+  font-size: 130%;
+}
+
+.open-close-button {
+  float: right;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.resources{
+  position: absolute;
+  top: 95%;
+}
+
+.other-details{
+  font-size: 80%;
 }
