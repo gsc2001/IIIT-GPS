@@ -308,12 +308,12 @@ svg {
     position: absolute;
     top: 90%;
     left: 55%;
-    width: 100%;
+    width: 45%;
     padding: 10px 20px;
 }
 
 .details-btn{
-    width: 40%;
+    width: 90%;
     height: 1%;
     line-height: 30px;
     font-weight: bold;
