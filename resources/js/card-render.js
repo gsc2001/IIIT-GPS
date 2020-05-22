@@ -2,8 +2,7 @@ $('document').ready(function () {
     updateBookmarks();
 })
 function updateBookmarks() {
-    var courses_id = JSON.parse(localStorage.getItem(SECERET_KEY));
-    console.log(courses_id);
+    var courses_id = JSON.parse(localStorage.getItem(SECRET_KEY));
     var courses = data.filter((obj) => {
         return courses_id.includes(obj.id + ''); // Convertinf obj.id to string
     });

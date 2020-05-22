@@ -14,14 +14,14 @@ function bookMarkHandle() {
     };
 };
 function addCourse(value) {
-    if (!JSON.parse(localStorage.getItem(SECERET_KEY)))
-        localStorage.setItem(SECERET_KEY, "[]");
-    let courses = JSON.parse(localStorage.getItem(SECERET_KEY));
+    if (!JSON.parse(localStorage.getItem(SECRET_KEY)))
+        localStorage.setItem(SECRET_KEY, "[]");
+    let courses = JSON.parse(localStorage.getItem(SECRET_KEY));
     courses.push(value);
-    localStorage.setItem(SECERET_KEY, JSON.stringify(courses));
+    localStorage.setItem(SECRET_KEY, JSON.stringify(courses));
 };
 function removeCourse(value) {
-    let courses = JSON.parse(localStorage.getItem(SECERET_KEY));
+    let courses = JSON.parse(localStorage.getItem(SECRET_KEY));
     courses.splice(courses.indexOf(value), 1);
-    localStorage.setItem(SECERET_KEY, JSON.stringify(courses));
+    localStorage.setItem(SECRET_KEY, JSON.stringify(courses));
 }

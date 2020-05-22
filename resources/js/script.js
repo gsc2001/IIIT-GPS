@@ -1,4 +1,4 @@
-var SECERET_KEY = 'gpscourses'
+var SECRET_KEY = 'gpscourses'
 //  Smooth scroll
 $("a").on("click", function (event) {
   if (this.hash !== "") {
