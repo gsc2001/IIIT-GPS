@@ -1,5 +1,6 @@
-function bookMarkHandle() {
+function bookMarkHandle (remove_on_disable){
     let bookmarks = document.querySelectorAll('#bookmark-holder');
+    console.log(bookmarks);
     for (let bookmark of bookmarks) {
         bookmark.addEventListener('click', function () {
             this.classList.toggle('bookmark-false');
@@ -11,7 +12,8 @@ function bookMarkHandle() {
             }
             else {
                 removeCourse(value);
-                $(this).parent().closest("div").fadeOut(500, updateBookmarks);
+                if(remove_on_disable == true)
+                    $(this).parent().closest("div").fadeOut(500,updateBookmarks);
             }
         });
     };
