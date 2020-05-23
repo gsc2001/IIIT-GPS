@@ -13,9 +13,15 @@ function main() {
   // Function to check index.html
   if (url[5] == 'x')
     updateBookmarks();
-  else {
-    var currentyear = JSON.parse(localStorage.getItem('gpsyear'))
+  else if(url[5] == 'r'){
+    var currentyear = JSON.parse(localStorage.getItem('gpsyear'));
     yearRender(parseInt(currentyear));
+    bookMarkHandle(false);
+  }
+  else
+  {
+    var currentcourse = JSON.parse(localStorage.getItem('gpscourse'));
+    courseRender(parseInt(currentcourse));
     bookMarkHandle(false);
   }
 }
