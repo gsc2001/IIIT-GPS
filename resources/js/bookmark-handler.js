@@ -1,6 +1,6 @@
 function bookMarkHandle (remove_on_disable){
     let bookmarks = document.querySelectorAll('#bookmark-holder');
-    console.log(bookmarks);
+
     for (let bookmark of bookmarks) {
         bookmark.addEventListener('click', function () {
             this.classList.toggle('bookmark-false');
