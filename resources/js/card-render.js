@@ -52,6 +52,22 @@ function renderDataToSmallCards(courses, dump, remove_on_disable) {
 }
 
 function yearRender(year) {
+
+    // Setting title
+    const title = document.getElementById('title')
+    if(year == 1)
+        title.innerHTML = 'I';
+    else if(year == 2)
+        title.innerHTML = 'II'
+    else if(year == 3)
+        title.innerHTML = 'III'
+    else
+        title.innerHTML = 'IV'
+    title.innerHTML += ' YEAR';
+
+    // Setting current year link active
+    const links = document.querySelectorAll(".navbar-item");
+    links[year-1].className += ' active';
     const yearSrc = document.getElementById('year').innerHTML;
     const template = Handlebars.compile(yearSrc);
     const dump = document.getElementById('year-content');
