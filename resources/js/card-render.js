@@ -18,27 +18,36 @@ function renderDataToSmallCards(courses, dump,remove_on_disable) {
     const template = Handlebars.compile(smlCardsrc);
     let content = '';
     let cnt = 0;
-    for (let crs of courses) {
-        if (cnt == 0) {
-            content += '<div class="row2">'
-        }
-        const context = {
-            course: crs,
-            status: (bookmarked_courses.includes(crs.id + '') + '')
-        }
-        const compiled = template(context);
-        content += compiled
-        cnt++;
-        if (cnt == 3) {
-            cnt = 0;
-            content += "</div>";
-        }
+    if(!courses.length){
+        content += ` <div class="row">
+        <p class="long-copy">
+            There are no courses in this section yet!
+        </p>
+    </div>`;
     }
-    if (cnt != 0) {
-        content += '</div>';
+    else{
+        for (let crs of courses) {
+            if (cnt == 0) {
+                content += '<div class="row2">'
+            }
+            const context = {
+                course: crs,
+                status: (bookmarked_courses.includes(crs.id + '') + '')
+            }
+            const compiled = template(context);
+            content += compiled
+            cnt++;
+            if (cnt == 3) {
+                cnt = 0;
+                content += "</div>";
+            }
+        }
+        if (cnt != 0) {
+            content += '</div>';
+        }
+        if(remove_on_disable)
+            dump.innerHTML = "";
     }
-    if(remove_on_disable)
-        dump.innerHTML = "";
     dump.innerHTML += content;
 }
 
