@@ -74,58 +74,60 @@
 
 <div class="course-page">
 
-<!--    <div class="course-name-bg"></div>-->
     <div class="course-page-title">Intro to Software Systems</div>
 
-    <div class="main-card-box">
-        <div class="card" id="ineedyou">
+    <div class="main-card-box">             
+        <div class="card">
 
             <div class="card-img">
                 <img src="../img/math.webp" />
             </div>
-            
-            
-            
+
             <div class="course-name" >
                 <ul>
                     <li class="course-name">
-                        <ion-icon name="return-down-forward-outline"></ion-icon>Intro to Software Systems
+                        <ion-icon name="return-down-forward-outline"></ion-icon>{{ course.name }}
                     </li>
-                        <!-- <li>
-                            <div class="bookmark-false" id="bookmark-holder" value=1>
-                                <ion-icon name="bookmark-outline" class="outline"></ion-icon>
-                                <ion-icon name="bookmark" class="solid"></ion-icon>
-                            </div>
-                        </li> -->
-                        <div class="tags">
-                            <ul>
-                                <li><ion-icon name="pricetags-outline"></ion-icon></li>
-
-                                <li>Web</li>
-                                <li>Programming</li>
-                            </ul>
+                    <li>
+                        <div class="bookmark-{{status}}" id="bookmark-holder" value={{ course.id }}>
+                            <ion-icon name="bookmark-outline" class="outline"></ion-icon>
+                            <ion-icon name="bookmark" class="solid"></ion-icon>
                         </div>
-                        <div class="other-details">
-                            <li class="instructor">
-                                <ion-icon name="person-outline"></ion-icon>Instructor <ion-icon name="arrow-forward-outline"></ion-icon>Raggu Reddy(but he was never there so.. learn it yourself :)
-                            </li>
-                            <li  class="pace">
-                                <ion-icon name="timer-outline"></ion-icon>Pace <ion-icon name="arrow-forward-outline"></ion-icon> Hell Fast
-                            </li>
-                            <li  class="difficulty">
-                                <ion-icon name="body-outline"></ion-icon>Difficulty <ion-icon name="arrow-forward-outline"></ion-icon> Oh..ho..ho you will know
-                            </li>
-                            <li class="durations">
-                                <ion-icon name="time-outline"></ion-icon>Duration <ion-icon name="arrow-forward-outline"></ion-icon> Half-Sem
-                            </li>
-                            <div class="rating">
-                                <ion-icon name="star-half-outline"></ion-icon>&lt;1&gt;
-                            </div> 
-                        </div>
-                    </ul>
-                </div>               
+                    </li>
+                </ul>
             </div>
             
+            <div class="tags">
+                <ul>
+                    <li><ion-icon name="pricetags-outline"></ion-icon></li>
+
+                    {{#each course.tags}}
+                    <li>{{ this }}</li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <div class="rating">
+                <ion-icon name="star-half-outline"></ion-icon>&lt;{{ course.ratings }}&gt;
+            </div>
+            
+            <div class="instructor">
+                <ion-icon name="person-outline"></ion-icon>Instructor <ion-icon name="arrow-forward-outline"></ion-icon>Raggu Reddy(but he was never there so.. learn it yourself :)
+            </div>
+            
+            <div  class="pace">
+                <ion-icon name="timer-outline"></ion-icon>Pace <ion-icon name="arrow-forward-outline"></ion-icon> Hell Fast
+            </div>
+            
+            <div  class="difficulty">
+                <ion-icon name="body-outline"></ion-icon>Difficulty <ion-icon name="arrow-forward-outline"></ion-icon> Oh..ho..ho you will know
+            </div>
+            
+            <div class="durations">
+                <ion-icon name="time-outline"></ion-icon>Duration <ion-icon name="arrow-forward-outline"></ion-icon> Half-Sem
+            </div>
+
+        </div>
     </div>
     
     <section class="expand-shrink shrink">
@@ -159,7 +161,6 @@
                 <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
             </a> 
         </div>
-<!--        <ion-icon name="chevron-down-outline" class="viewmore"></ion-icon>-->
         <div class="clearfix"></div>
     </section>
     
@@ -169,7 +170,6 @@
 </body>
 <script src="../../dev-data/data.js"></script>
 <script src="../js/script.js"></script>
-<!-- <script src="../js/navcolorchange.js"></script> -->
 <script src="../js/card-render.js"></script>
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
