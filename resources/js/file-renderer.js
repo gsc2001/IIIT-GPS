@@ -7,5 +7,5 @@ function saveAndOpenYear(value)
 function saveAndOpenCourse(course_id)
 {
     localStorage.setItem(KEY_COURSE,JSON.stringify(course_id));
-    window.location.href =  '../resources/html/course.html';
+    window.location.href =  'course.html';
 }

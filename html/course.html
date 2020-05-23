@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon</title>
+    <title id="title">Hackathon</title>
 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
@@ -19,24 +19,23 @@
     <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
 
-
     <!-- script includes bootstrap, font-awesome, jquery,Handlebars -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../vendors/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/1fde7af15d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <!-- /script includes -->
+    <script id="course-template" type="text/x-handlebars-template">
+        <div class="course-page-title">{{ course.name }}</div>
 
-    <!-- Templates -->
-    <script id="card-small" type="text/x-handlebars-template">
-        <div class="col2 span-1-of-3">
-            <div class="card" id="ineedyou">
-            
+        <div class="main-card-box">
+            <div class="card">
+
                 <div class="card-img">
                     <img src="../resources/img/math.webp" />
                 </div>
-                
-                <div class="course-name" >
+
+                <div class="course-name">
                     <ul>
                         <li class="course-name">
                             <ion-icon name="return-down-forward-outline"></ion-icon>{{ course.name }}
@@ -49,37 +48,105 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="tags">
                     <ul>
-                        <li><ion-icon name="pricetags-outline"></ion-icon></li>
-                        
+                        <li>
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                        </li>
+
                         {{#each course.tags}}
                         <li>{{ this }}</li>
                         {{/each}}
                     </ul>
                 </div>
 
+                <!-- <div class="instructor">
+                    <ion-icon name="person-outline"></ion-icon>Instructor <ion-icon name="arrow-forward-outline">
+                    </ion-icon>{{ course.instructor }}
+                </div> -->
+
+                <div class="pace">
+                    <ion-icon name="timer-outline"></ion-icon>Pace <ion-icon name="arrow-forward-outline"></ion-icon>
+                    {{ course.pace }}
+                </div>
+
+                <div class="difficulty">
+                    <ion-icon name="body-outline"></ion-icon>Difficulty <ion-icon name="arrow-forward-outline">
+                    </ion-icon> {{ course.difficulty }}
+                </div>
+
+                <div class="durations">
+                    <ion-icon name="time-outline"></ion-icon>Duration <ion-icon name="arrow-forward-outline"></ion-icon>
+                    {{ course.duration }}
+                </div>
                 <div class="rating">
                     <ion-icon name="star-half-outline"></ion-icon>&lt;{{ course.ratings }}&gt;
                 </div>
-                
-                <div class="details">
-                    <a class="details-btn" onclick="saveAndOpenCourse(`{{ course.id }}`)">Details</a>
-                </div>
-                
             </div>
-            
         </div>
+
+        <section class="expand-shrink shrink">
+            <p>Syllabus</p>
+            <a class="expand-shrink-button">
+                <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
+                <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
+            </a>
+            <div class="clearfix"></div>
+            <div class="expand-shrink-content">
+                <p>{{ course.syllabus }}</p>
+                <a class="expand-shrink-button">
+                    <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
+                    <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+
+        <section class="expand-shrink expand">
+            <p>Resources</p>
+            <a class="expand-shrink-button">
+                <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
+                <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
+            </a>
+            <div class="clearfix"></div>
+            <div class="expand-shrink-content">
+                <p>
+                    <ul>
+                        {{#each course.resources}}
+                        <li>{{ this }}</li>
+                        {{/each}}
+                    </ul>
+                </p>
+                <a class="expand-shrink-button">
+                    <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
+                    <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+
     </script>
-    <!-- /Templates -->
 
 </head>
 
 <body>
 
     <!-- navbar -->
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand"><i class="fas fa-graduation-cap icon"></i></a>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top bg-chng">
+        <a class="navbar-brand" href="index.html">
+            <div class="home">
+                <div class="center">
+                    <button class="home-btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                            <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="bg-line" />
+                            <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="hl-line" />
+                        </svg>
+                        <span>My Courses</span>
+                    </button>
+                </div>
+            </div>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -103,37 +170,11 @@
             </ul>
         </div>
     </nav>
-    <div class="header">
-        <div class="hero-text-box">
-            <h1>Confused!!<br />Check out the courses.</h1>
-            <div class="home">
-                <div class="center">
-                    <a href="#course-cards">
-                        <button class="home-btn">
-                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                                <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="bg-line" />
-                                <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="hl-line" />
-                            </svg>
-                            <span>My Courses</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Cards -->
-    <section id="course-cards" class="course-display container-fluid">
-        <div class="row">
-            <h2 class="sem-head">My-Courses</h2>
-        </div>
-        <section id="course-cards-my"></section>
-    </section>
-
+    <div id="course-page-display" class="course-page"></div>
 
 </body>
 <script src="../resources/js/script.js"></script>
-<script src="../resources/js/navcolorchange.js"></script>
 <script src="../resources/js/bookmark-handler.js"></script>
 <script src="../resources/js/card-render.js"></script>
 <script src="../resources/js/file-renderer.js"></script>
