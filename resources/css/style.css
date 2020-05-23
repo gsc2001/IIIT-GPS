@@ -415,32 +415,30 @@ section {
 /***********************************/
 /* COURSE PAGE */
 /* ****************************************/
-
-.course-page{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.course-page-title {
-  background-image: linear-gradient(to bottom right,#34cdeb, #eba13b);
-  position: absolute;
-  top: 11%;
-  font-size: 260%;
-  word-spacing: 2px;
-  text-align: left;
-  margin-bottom: 30px;
-  padding-top: 12%;
-  padding-left: 5%;
-  letter-spacing: 1px;
-  width: 100%;
-  height: 50%;
-}
-
 .main-card-box {
   position: absolute;
   top: 30%;
   right: 10%;
+  width: 30%;
+}
+
+.main-card-box ul {
+    margin-bottom: 0;
+}
+
+.main-card-box .card-img {
+    height: 400px;
+}
+
+.course-page-title {
+  background-image: linear-gradient(to bottom right, #eba13b,#34cdeb);
+  font-size: 260%;
+  word-spacing: 2px;
+  text-align: left;
+  letter-spacing: 1px;
+    margin: 100px 0;
+    padding: 200px 50px;
+    padding-right: 40%;
 }
 
 .main-card-box .course-name,
@@ -448,43 +446,69 @@ section {
   height: auto;
 }
 
-.open-close {
-  position: absolute;
-  top: 70%;
+.expand-shrink {
   box-shadow: 0 0 5px #555;
   padding: 20px;
   border-radius: 3%;
   margin-left: 8%;
+  margin-bottom: 30px;
+  width: 50%;
 }
 
-.open-close>p {
+.expand-shrink>p {
   float: left;
-  width: 100%;
+  width: 70%;
   font-size: 200%;
 }
 
-.open>p,
-.open>.open-close-button {
+.expand-shrink>p,
+.expand-shrink-button {
+  font-weight: 700;
+  color: #000;
+  opacity: 0.5;
+}
+
+.expand-shrink>p:hover,
+.expand-shrink-button:hover,
+.expand>p,
+.expand .expand-shrink-button {
+  opacity: 0.75;
+}
+
+.expand>p,
+.expand>.expand-shrink-button {
   border-bottom: 2px solid #555;
 }
 
-.viewmore{
-  float: right;
-  font-size: 130%;
+.expand .expand-shrink-content {
+    display: block;
 }
 
-.open-close-button {
+.shrink .expand-shrink-content {
+    display: none;
+}
+
+.expand-shrink-button {
   float: right;
-  width: 20%;
+  width: 30%;
   text-align: right;
   padding-right: 10px;
+  font-size: 200%;
 }
 
-.resources{
-  position: absolute;
-  top: 95%;
+.expand .expand-button {
+    display: none;
 }
 
-.other-details{
-  font-size: 80%;
+.expand .shrink-button {
+    display: inline-block;
 }
+
+.shrink .shrink-button {
+    display: none;
+}
+
+.shrink .expand-button {
+    display: inline-block;
+}
+
