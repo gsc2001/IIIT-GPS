@@ -18,14 +18,14 @@ function renderDataToSmallCards(courses, dump, remove_on_disable) {
     const template = Handlebars.compile(smlCardsrc);
     let content = '';
     let cnt = 0;
-    if(!courses.length){
+    if (!courses.length) {
         content += ` <div class="row">
         <p class="long-copy">
             There are no courses in this section yet!
         </p>
     </div>`;
     }
-    else{
+    else {
         for (let crs of courses) {
             if (cnt == 0) {
                 content += '<div class="row2">'
@@ -45,7 +45,7 @@ function renderDataToSmallCards(courses, dump, remove_on_disable) {
         if (cnt != 0) {
             content += '</div>';
         }
-        if(remove_on_disable)
+        if (remove_on_disable)
             dump.innerHTML = "";
     }
     dump.innerHTML += content;
@@ -55,11 +55,11 @@ function yearRender(year) {
 
     // Setting title
     const title = document.getElementById('title')
-    if(year == 1)
+    if (year == 1)
         title.innerHTML = 'I';
-    else if(year == 2)
+    else if (year == 2)
         title.innerHTML = 'II'
-    else if(year == 3)
+    else if (year == 3)
         title.innerHTML = 'III'
     else
         title.innerHTML = 'IV'
@@ -67,7 +67,7 @@ function yearRender(year) {
 
     // Setting current year link active
     const links = document.querySelectorAll(".navbar-item");
-    links[year-1].className += ' active';
+    links[year - 1].className += ' active';
     const yearSrc = document.getElementById('year').innerHTML;
     const template = Handlebars.compile(yearSrc);
     const dump = document.getElementById('year-content');
@@ -86,8 +86,7 @@ function yearRender(year) {
     renderDataToSmallCards(coursessm2, dumpsm2, false);
 }
 
-function courseRender(course_id)
-{
+function courseRender(course_id) {
     var bookmarked_courses = JSON.parse(localStorage.getItem(SECRET_KEY));
     if (!bookmarked_courses)
         bookmarked_courses = [];
@@ -97,10 +96,24 @@ function courseRender(course_id)
     title.innerHTML = crs.name;
     const course_src = document.getElementById('course-template').innerHTML;
     const dump = document.getElementById('course-page-display');
-    const template =Handlebars.compile(course_src);
+    const template = Handlebars.compile(course_src);
     dump.innerHTML = template({
         course: crs,
         status: (bookmarked_courses.includes(crs.id + '') + '')
     });
+    const syl_btns = document.getElementsByClassName('syl-btn');
+    const res_btns = document.getElementsByClassName('res-btn');
+    for (let syl_btn of syl_btns) {
+        syl_btn.addEventListener('click', (e) => {
+            $('.syl').slideToggle();
+            $(e.target).closest('section').toggleClass('shrink').toggleClass('expand')
+        });
+    }
+    for (let res_btn of res_btns) {
+        res_btn.addEventListener('click', (e) => {
+            $('.res').slideToggle();
+            $(e.target).closest('section').toggleClass('shrink').toggleClass('expand')
+        });
+    }
 }
 

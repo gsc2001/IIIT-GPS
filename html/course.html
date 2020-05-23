@@ -88,14 +88,15 @@
 
         <section class="expand-shrink shrink">
             <p>Syllabus</p>
-            <a class="expand-shrink-button">
+            <a class="expand-shrink-button syl-btn">
                 <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
                 <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
             </a>
             <div class="clearfix"></div>
-            <div class="expand-shrink-content">
+            {{ course.syllabus-one }}
+            <div class="expand-shrink-content syl">
                 <p>{{ course.syllabus }}</p>
-                <a class="expand-shrink-button">
+                <a class="expand-shrink-button syl-btn">
                     <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
                     <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
                 </a>
@@ -103,22 +104,17 @@
             <div class="clearfix"></div>
         </section>
 
-        <section class="expand-shrink expand">
+        <section class="expand-shrink shrink">
             <p>Resources</p>
-            <a class="expand-shrink-button">
+            <a class="expand-shrink-button res-btn">
                 <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
                 <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
             </a>
             <div class="clearfix"></div>
-            <div class="expand-shrink-content">
-                <p>
-                    <ul>
-                        {{#each course.resources}}
-                        <li>{{ this }}</li>
-                        {{/each}}
-                    </ul>
-                </p>
-                <a class="expand-shrink-button">
+            {{ course.resource-one }}
+            <div class="expand-shrink-content res">
+                <p>{{ course.resources }}</p>
+                <a class="expand-shrink-button res-btn">
                     <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
                     <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
                 </a>
