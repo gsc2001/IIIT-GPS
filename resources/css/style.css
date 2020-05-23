@@ -484,6 +484,12 @@ section {
   opacity: 0.75;
 }
 
+/* done due to default styling for a */
+.expand-shrink-button:hover {
+    color: #000;
+    border: none;
+}
+
 .expand-shrink>p {
   border-bottom: 2px solid #555;
 }
