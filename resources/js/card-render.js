@@ -86,3 +86,16 @@ function yearRender(year) {
     renderDataToSmallCards(coursessm2, dumpsm2, false);
 }
 
+function courseRender(course_id)
+{
+    const crs = data[course_id];
+    const title = document.getElementById('title');
+    title.innerHTML = crs.name;
+    const course_src = document.getElementById('course-template').innerHTML;
+    const dump = document.getElementById('course-page-display');
+    const template =Handlebars.compile(course_src);
+    dump.innerHTML = template({
+        course: crs
+    });
+}
+
