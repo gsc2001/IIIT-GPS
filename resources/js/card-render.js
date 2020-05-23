@@ -5,7 +5,7 @@ function updateBookmarks() {
     var courses = data.filter((obj) => {
         return courses_id.includes(obj.id + ''); // Convert obj.id to string
     })
-    const dump = document.getElementById('course-cards');
+    const dump = document.getElementById('course-cards-my');
     renderDataToSmallCards(courses,dump,true);
     bookMarkHandle(true);
 }
