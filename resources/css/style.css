@@ -474,6 +474,7 @@ section {
   font-weight: 700;
   color: #000;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .expand-shrink>p:hover,
