@@ -34,6 +34,24 @@
     margin-left: 10%;
     font-size: 120%;
   }
+  .main-card-box {
+  position: static;
+  width: 100%;
+      padding: 0 20%;
+      padding-bottom: 10%;
+    }
+.main-card-box .card-img {
+    height: 300px;
+}
+.course-page-title {
+    margin: 100px 0;
+    padding: 100px 50px;
+    text-align: center;
+    }
+    .expand-shrink {
+        width: 80%;
+/*        margin: 0;*/
+    }
 }
 
 /* Small phones to small tablets */
@@ -88,4 +106,39 @@
   .home{
     width: 150px;
   }
+  
+    .main-card-box {
+      padding: 0 10%;
+        padding-bottom: 10%;
+    }
+.main-card-box .card-img {
+    height: 150px;
 }
+.course-page-title {
+    margin-bottom: 50px;
+    padding: 50px 25px;
+    }
+    .expand-shrink {
+        width: 80%;
+/*        margin: 0;*/
+    }
+}
+
+
+/*
+
+  .main-card-box {
+  position: static;
+  width: 100%;
+      padding: 0 20%;
+      padding-bottom: 10%;
+    }
+.course-page-title {
+    margin: 100px 0;
+    padding: 100px 50px;
+    text-align: center;
+    }
+    .expand-shrink {
+        width: 80%;
+        margin: 0;
+    }*/

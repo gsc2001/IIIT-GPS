@@ -74,15 +74,18 @@
 
 <div class="course-page">
 
+<!--    <div class="course-name-bg"></div>-->
     <div class="course-page-title">Intro to Software Systems</div>
 
-    <div class="col2 span-2-of-7 main-card-box">
+    <div class="main-card-box">
         <div class="card" id="ineedyou">
 
             <div class="card-img">
                 <img src="../img/math.webp" />
             </div>
-
+            
+            
+            
             <div class="course-name" >
                 <ul>
                     <li class="course-name">
@@ -123,28 +126,45 @@
                 </div>               
             </div>
             
-        </div>
-        <section class="open-close open span-1-of-2">
-            <p class="syllabus-title">Syllabus</p>
-            <!-- <a class="open-close-button">+</a> -->
-            <div class="clearfix"></div>
-            <div class="open-close-syllabus">
-                <p>fing</p>
-            </div>
-            <ion-icon name="chevron-down-outline" class="viewmore"></ion-icon>
-            <div class="clearfix"></div>
-        </section>
-        <section class="open-close open resources span-1-of-2">
-            <p class="resources-title">Resources</p>
-            <!-- <a class="open-close-button">+</a> -->
-            <div class="clearfix"></div>
-            <div class="open-close-syllabus">
-                <p>fing</p>
-            </div>
-            <ion-icon name="chevron-down-outline" class="viewmore"></ion-icon>
-            <div class="clearfix"></div>
-        </section>
     </div>
+    
+    <section class="expand-shrink shrink">
+        <p>Syllabus</p>
+         <a class="expand-shrink-button">
+            <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
+            <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
+        </a> 
+        <div class="clearfix"></div>
+        <div class="expand-shrink-content">
+            <p>Put syllabus here</p>
+             <a class="expand-shrink-button">
+                <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
+                <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
+            </a> 
+        </div>
+        <div class="clearfix"></div>
+    </section>
+    
+    <section class="expand-shrink expand">
+        <p>Resources</p>
+         <a class="expand-shrink-button">
+            <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
+            <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
+        </a> 
+        <div class="clearfix"></div>
+        <div class="expand-shrink-content">
+            <p>Put resources here</p>
+             <a class="expand-shrink-button">
+                <ion-icon name="chevron-down-outline" class="expand-button"></ion-icon>
+                <ion-icon name="chevron-up-outline" class="shrink-button"></ion-icon>
+            </a> 
+        </div>
+<!--        <ion-icon name="chevron-down-outline" class="viewmore"></ion-icon>-->
+        <div class="clearfix"></div>
+    </section>
+    
+    
+</div>
 
 </body>
 <script src="../../dev-data/data.js"></script>
