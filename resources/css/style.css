@@ -131,6 +131,10 @@ justify-content: center;
 align-items: center;
 }
 
+nav .home-btn{
+  border: 1px solid white;  
+}
+
 .center {
 width: 180px;
 height: 60px;
