@@ -106,6 +106,7 @@ color: rgba(255,255,255,0.8);
 padding-left: 2rem;
 padding-right: 2rem;
 border-bottom: 3px solid transparent;
+cursor: pointer;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .active {
