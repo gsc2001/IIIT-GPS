@@ -86,3 +86,21 @@ function yearRender(year) {
     renderDataToSmallCards(coursessm2, dumpsm2, false);
 }
 
+function courseRender(course_id)
+{
+    var bookmarked_courses = JSON.parse(localStorage.getItem(SECRET_KEY));
+    if (!bookmarked_courses)
+        bookmarked_courses = [];
+
+    const crs = data[course_id];
+    const title = document.getElementById('title');
+    title.innerHTML = crs.name;
+    const course_src = document.getElementById('course-template').innerHTML;
+    const dump = document.getElementById('course-page-display');
+    const template =Handlebars.compile(course_src);
+    dump.innerHTML = template({
+        course: crs,
+        status: (bookmarked_courses.includes(crs.id + '') + '')
+    });
+}
+
