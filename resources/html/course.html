@@ -88,6 +88,12 @@
                     <li class="course-name">
                         <ion-icon name="return-down-forward-outline"></ion-icon>{{ course.name }}
                     </li>
+                    <li>
+                        <div class="bookmark-{{status}}" id="bookmark-holder" value={{ course.id }}>
+                            <ion-icon name="bookmark-outline" class="outline"></ion-icon>
+                            <ion-icon name="bookmark" class="solid"></ion-icon>
+                        </div>
+                    </li>
                 </ul>
             </div>
             
