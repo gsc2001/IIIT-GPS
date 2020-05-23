@@ -411,9 +411,9 @@ h2:after {
 }
 
 .course-page-title {
-  background-image: linear-gradient(to bottom right, #eba13b,#34cdeb);
+  background-image: linear-gradient(to bottom right,#34cdeb, #eba13b);
   position: absolute;
-  top: 12.2%;
+  top: 11%;
   font-size: 260%;
   word-spacing: 2px;
   text-align: left;
