@@ -1,4 +1,6 @@
 var SECRET_KEY = 'gpscourses'
+var KEY_YEAR = 'gpsyear'
+var KEY_COURSE = 'gpscourse'
 //  Smooth scroll
 $("a").on("click", function (event) {
   if (this.hash !== "") {
