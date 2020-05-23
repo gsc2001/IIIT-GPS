@@ -363,10 +363,10 @@ section {
 
 .row {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-h2 {
+.sem-head {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 180%;
@@ -376,7 +376,7 @@ h2 {
   letter-spacing: 1px;
 }
 
-h2:after {
+.sem-head:after {
   display: block;
   height: 2px;
   background-color: #118cff;
