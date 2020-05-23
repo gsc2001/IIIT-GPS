@@ -431,7 +431,7 @@ section {
 }
 
 .course-page-title {
-  background-image: linear-gradient(to bottom right, #eba13b,#34cdeb);
+  background-image: linear-gradient(to bottom right,#34cdeb, #eba13b);
   font-size: 260%;
   word-spacing: 2px;
   text-align: left;
