@@ -24,6 +24,9 @@
     <script src="../../vendors/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/1fde7af15d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+    <script src="../js/config.js"></script>
     <!-- /script includes -->
     <script id="course-template" type="text/x-handlebars-template">
         <div class="course-page-title">{{ course.name }}</div>
@@ -81,7 +84,7 @@
                     {{ course.duration }}
                 </div>
                 <div class="rating">
-                    <ion-icon name="star-half-outline"></ion-icon>&lt;{{ course.ratings }}&gt;
+                    <ion-icon name="star-half-outline"></ion-icon>&lt;<span id={{course.id}} class="rats"></span>&gt;
                 </div>
             </div>
         </div>
@@ -174,6 +177,7 @@
 <script src="../js/bookmark-handler.js"></script>
 <script src="../js/card-render.js"></script>
 <script src="../js/file-renderer.js"></script>
+<script src="../js/ratingData.js"></script>
 <script src="../../dev-data/data.js"></script>
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
