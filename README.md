@@ -27,6 +27,8 @@ Checkout the website by [clicking here](https://web.iiit.ac.in/~sanchit.arora/II
 - Add functionality to create users account and store data like bookmarked courses globally.
 - Allow users to post resources which will get uploaded after review.
 - Allow users to request suggestions/resources from another user.
+- Implement a search bar for courses for easier access.
+- Recommendation System on the basis of tags.
 
 ### Our Team
 - *Gurkirat Singh*
