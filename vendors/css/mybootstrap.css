@@ -528,6 +528,9 @@ html {
     padding-right: 0;
     padding-left: 0;
   }
+  .navbar {
+    padding: 0 1rem;
+  }
 }
 
 @media (min-width: 768px) {
