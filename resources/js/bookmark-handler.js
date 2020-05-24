@@ -8,7 +8,8 @@ function bookMarkHandle (remove_on_disable){
             let value = this.getAttribute("value");
             if (this.classList.contains('bookmark-true')) {
                 addCourse(value);
-                updateBookmarks();
+                if(remove_on_disable == true)
+                    updateBookmarks();
             }
             else {
                 removeCourse(value);
