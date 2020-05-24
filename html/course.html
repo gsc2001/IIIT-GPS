@@ -124,13 +124,16 @@
             </div>
             <div class="clearfix"></div>
         </section>
-        <input type="radio" name="rating" value="1"> 1
-        <input type="radio" name="rating" value="2"> 2
-        <input type="radio" name="rating" value="3"> 3
-        <input type="radio" name="rating" value="4"> 4
-        <input type="radio" name="rating" value="5"> 5
+        <div class="all-rating expand-shrink shrink">
+            <h2 class="rating-text"> Rating </h2>
+        <input type="radio" name="rating" value="1" class="option-input radio"> <div class="font">1</div>
+        <input type="radio" name="rating" value="2" class="option-input radio"> <div class="font">2</div>
+        <input type="radio" name="rating" value="3" class="option-input radio"> <div class="font">3</div>
+        <input type="radio" name="rating" value="4" class="option-input radio"> <div class="font">4</div>
+        <input type="radio" name="rating" value="5" class="option-input radio"> <div class="font">5</div>
 
         <button id="{{ course.id }}" class="rat-submit">Submit</button>
+    </div>
     </script>
 
 </head>
