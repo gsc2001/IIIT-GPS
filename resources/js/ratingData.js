@@ -55,6 +55,8 @@ function getRating() {
             }
             if(!a)
                 alert('Please select one rating')
+            else
+                location.reload();
 
         });
 
