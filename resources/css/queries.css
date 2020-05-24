@@ -78,6 +78,12 @@ input[type="radio"]:first-of-type{
   body {
     font-size: 16px;
   }
+  .home {
+    height: 75px;
+  }
+  .home-btn {
+    height: 50px;
+  }
   section {
     padding: 30px 0;
   }
@@ -86,8 +92,8 @@ input[type="radio"]:first-of-type{
     margin-left: 0%;
     font-size: 90%;
 }
-  .hero-text-box,
-  .row {
+  .hero-text-box
+   {
     padding: 0 4%;
   }
   h1 {
@@ -110,6 +116,15 @@ input[type="radio"]:first-of-type{
   footer a:visited {
     padding: 0 38.5%;
   }
+  .course-name {
+    height: auto;
+}
+.tags ul {
+      height: auto;
+  }
+  .card {
+      width: 70%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -124,11 +139,16 @@ footer a:visited {
     font-size: 250%;
     margin-left: 5px;
   }
+/*
   .course-name {
       height: auto;
   }
 .tags ul {
         height: auto;
+    }
+*/
+    .card {
+        width: 90%;
     }
     .card div:not(:first-child) {
     padding: 2px 8px;
@@ -159,7 +179,6 @@ footer a:visited {
     }
     .expand-shrink {
         width: 80%;
-/*        margin: 0;*/
     }
     .option-input{
       height: 20px;
