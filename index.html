@@ -25,6 +25,9 @@
     <script src="./vendors/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/1fde7af15d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+    <script src="./resources/js/config.js"></script>
     <!-- /script includes -->
 
     <!-- Templates -->
@@ -60,7 +63,7 @@
                 </div>
 
                 <div class="rating">
-                    <ion-icon name="star-half-outline"></ion-icon>&lt;{{ course.ratings }}&gt;
+                    <ion-icon name="star-half-outline"></ion-icon>&lt;<span id={{course.id}} class="rats"></span>&gt;
                 </div>
                 
                 <div class="details">
@@ -92,13 +95,13 @@
                     <a class="nav-link navbar-item" onclick="saveAndOpenYearIndex(1)">I Year</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-item" onclick="saveAndOpenYearIndex(2)" >II Year</a>
+                    <a class="nav-link navbar-item" onclick="saveAndOpenYearIndex(2)">II Year</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-item" onclick="saveAndOpenYearIndex(3)" >III Year</a>
+                    <a class="nav-link navbar-item" onclick="saveAndOpenYearIndex(3)">III Year</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-item" onclick="saveAndOpenYearIndex(4)" >IV Year</a>
+                    <a class="nav-link navbar-item" onclick="saveAndOpenYearIndex(4)">IV Year</a>
                 </li>
             </ul>
         </div>
@@ -137,6 +140,7 @@
 <script src="./resources/js/bookmark-handler.js"></script>
 <script src="./resources/js/card-render.js"></script>
 <script src="./resources/js/file-renderer.js"></script>
+<script src="./resources/js/ratingData.js"></script>
 <script src="./dev-data/data.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 

@@ -8,6 +8,7 @@ function updateBookmarks() {
     const dump = document.getElementById('course-cards-my');
     renderDataToSmallCards(courses, dump, true);
     bookMarkHandle(true);
+    addRating();
 }
 
 function renderDataToSmallCards(courses, dump, remove_on_disable) {
