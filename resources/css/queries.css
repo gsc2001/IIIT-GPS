@@ -21,6 +21,15 @@
   }
 }
 
+
+@media only screen and (max-width: 1090px){
+  footer a:link,
+  footer a:visited {
+    padding: 0 42.5%;
+  }
+}
+
+
 /* Small tablet to big tablet */
 @media only screen and (max-width: 1023px) {
   body {
@@ -83,7 +92,7 @@ input[type="radio"]:first-of-type{
     margin-left: 0%;
     font-size: 90%;
 }
-  .hero-text-box,
+  .hero-text-box
    {
     padding: 0 4%;
   }
@@ -103,15 +112,26 @@ input[type="radio"]:first-of-type{
   .rat-submit{
     margin-left: 35%;
   }
-.course-name {
+  footer a:link,
+  footer a:visited {
+    padding: 0 38.5%;
+  }
+  .course-name {
+    height: auto;
+}
+.tags ul {
       height: auto;
   }
-.tags ul {
-        height: auto;
-    }
-    .card {
-        width: 70%;
-    }
+  .card {
+      width: 70%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+footer a:link,
+footer a:visited {
+  padding: 0 33%;
+}
 }
 
 @media only screen and (max-width: 480px) {
