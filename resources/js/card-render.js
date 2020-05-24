@@ -101,6 +101,7 @@ function courseRender(course_id) {
         course: crs,
         status: (bookmarked_courses.includes(crs.id + '') + '')
     });
+    eval(document.getElementById("rating-widget").innerHTML);
     const syl_btns = document.getElementsByClassName('syl-btn');
     const res_btns = document.getElementsByClassName('res-btn');
     for (let syl_btn of syl_btns) {
