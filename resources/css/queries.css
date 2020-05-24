@@ -55,7 +55,7 @@
     }
 
 input[type="radio"]:first-of-type{
-  margin-left: 35%;
+  margin-left: 20%;
 }
 
 .rat-submit{
@@ -150,5 +150,10 @@ input[type="radio"]:first-of-type{
       line-height: 20px;
       text-align: left;
     }
-    
+    input[type="radio"]:first-of-type{
+  margin-left: 0;
+    }
+    .font {
+        margin-right: 2px;
+    }
 }
