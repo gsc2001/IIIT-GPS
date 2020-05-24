@@ -53,6 +53,15 @@
         width: 80%;
 /*        margin: 0;*/
     }
+
+input[type="radio"]:first-of-type{
+  margin-left: 35%;
+}
+
+.rat-submit{
+  margin-top: 1%;
+  margin-left: 40%;
+}
 }
 
 /* Small phones to small tablets */
@@ -80,6 +89,13 @@
   }
   .icon {
     font-size: 300%;
+  }
+
+  input[type="radio"]:first-of-type{
+    margin-left: 26%;
+  }
+  .rat-submit{
+    margin-left: 35%;
   }
 }
 

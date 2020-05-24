@@ -614,3 +614,17 @@ section {
   margin-right: 10px;
   padding-bottom: 5%;
 }
+
+input[type="radio"] {
+  margin: 0 0.5%;
+}
+
+input[type="radio"]:first-of-type{
+  margin-left: 18%;
+}
+
+.rat-submit{
+  margin-top: 1%;
+  margin-left: 23%;
+}
+
