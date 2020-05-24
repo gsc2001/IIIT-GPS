@@ -635,3 +635,35 @@ input[type="radio"]:first-of-type{
   margin-left: 23%;
 }
 
+/*-------------------------------------*/
+/*FOOTER*/
+/*-------------------------------------*/
+
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 90%;
+}
+
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  padding: 0 44.5%;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+  border: 0;
+  color: #ddd;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}

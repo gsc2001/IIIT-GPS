@@ -21,6 +21,15 @@
   }
 }
 
+
+@media only screen and (max-width: 1090px){
+  footer a:link,
+  footer a:visited {
+    padding: 0 42.5%;
+  }
+}
+
+
 /* Small tablet to big tablet */
 @media only screen and (max-width: 1023px) {
   body {
@@ -97,6 +106,17 @@ input[type="radio"]:first-of-type{
   .rat-submit{
     margin-left: 35%;
   }
+  footer a:link,
+  footer a:visited {
+    padding: 0 38.5%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+footer a:link,
+footer a:visited {
+  padding: 0 33%;
+}
 }
 
 @media only screen and (max-width: 480px) {
