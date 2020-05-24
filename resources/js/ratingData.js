@@ -17,7 +17,7 @@ function addRating() {
                 else
                     rat.innerHTML += '<img src="../resources/img/emptystar' + dir + '.png" class="star-image">';
             }
-            rat.innerHTML += ' (' + snapshot.val() + ')';
+            rat.innerHTML += ' (' + Math.round(snapshot.val() * 10) / 10 + ')';
         });
     }
 }
@@ -26,11 +26,21 @@ function getRating() {
     var btns = document.getElementsByClassName('rat-submit')
     let a = false
     for (let btn of btns) {
+        
+        let radios = document.getElementsByName('rating');
+        for(let r of radios) {
+            if (r.value == localStorage.getItem(KEY_RATING)) {
+                r.checked = true;
+                btn.innerHTML = 'Update';
+            }
+        }
+        
         btn.addEventListener('click', async function () {
             var ref_rating = database.ref().child('ratings').child('r' + btn.id);
             var ref_number = database.ref().child('number_of_ratings').child('r' + btn.id);
-            let radios = document.getElementsByName('rating');
+            
             for (let r of radios) {
+                
                 if (r.checked) {
                     await ref_number.once('value').then(function (snapshot) {
                         window.no = snapshot.val() || 0;
@@ -44,8 +54,13 @@ function getRating() {
                     console.log(data);
                     let nr = (rating * no + data);
                     no += 1;
+                    if (btn.innerHTML == 'Update') {
+                        nr -= localStorage.getItem(KEY_RATING);
+                        no -= 1;
+                    }
+                    localStorage.setItem(KEY_RATING, data);
                     nr = nr / no;
-                    nr = Math.round(nr * 10) / 10;
+//                    nr = Math.round(nr * 10) / 10;
                     ref_rating.set(JSON.stringify(nr));
                     ref_number.set(JSON.stringify(no));
                     a = true
