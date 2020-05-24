@@ -7,26 +7,26 @@
     <title id="title">Hackathon</title>
 
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
 
     <!-- style-sheet includes bootstrap, main, queries -->
-    <link rel="stylesheet" href="../../vendors/css/mybootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/queries.css">
-    <link rel="stylesheet" type="text/css" href="../../vendors/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="../../vendors/css/grid.css">
+    <link rel="stylesheet" href="../vendors/css/mybootstrap.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
 
     <!-- script includes bootstrap, font-awesome, jquery,Handlebars -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../vendors/js/bootstrap.min.js"></script>
+    <script src="../vendors/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/1fde7af15d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
-    <script src="../js/config.js"></script>
+    <script src="../resources/js/config.js"></script>
     <!-- /script includes -->
     <script id="course-template" type="text/x-handlebars-template">
         <div class="course-page-title">{{ course.name }}</div>
@@ -35,7 +35,7 @@
             <div class="card">
 
                 <div class="card-img">
-                    <img src="../img/math.webp" />
+                    <img src="../resources/img/math.webp" />
                 </div>
 
                 <div class="course-name">
@@ -124,7 +124,12 @@
             </div>
             <div class="clearfix"></div>
         </section>
-        <input type="text" id="{{ course.id }}" class="rat-enter">
+        <input type="radio" name="rating" value="1"> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+
         <button id="{{ course.id }}" class="rat-submit">Submit</button>
     </script>
 
@@ -134,7 +139,7 @@
 
     <!-- navbar -->
     <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top bg-chng">
-        <a class="navbar-brand" href="../../index.html">
+        <a class="navbar-brand" href="index.html">
             <div class="home">
                 <div class="center">
                     <button class="home-btn">
@@ -174,12 +179,12 @@
     <div id="course-page-display" class="course-page"></div>
 
 </body>
-<script src="../js/script.js"></script>
-<script src="../js/bookmark-handler.js"></script>
-<script src="../js/card-render.js"></script>
-<script src="../js/file-renderer.js"></script>
-<script src="../js/ratingData.js"></script>
-<script src="../../dev-data/data.js"></script>
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="../resources/js/script.js"></script>
+<script src="../resources/js/bookmark-handler.js"></script>
+<script src="../resources/js/card-render.js"></script>
+<script src="../resources/js/file-renderer.js"></script>
+<script src="../resources/js/ratingData.js"></script>
+<script src="../dev-data/data.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 
 </html>
