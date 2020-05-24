@@ -13,9 +13,9 @@ function addRating() {
                 if( i % 2 )
                     dir = 'L';
                 if( rating >= 0.5 * i )
-                    rat.innerHTML += '<img src="../img/fullstarblue' + dir + '.png" class="star-image">';
+                    rat.innerHTML += '<img src="../resources/img/fullstarblue' + dir + '.png" class="star-image">';
                 else
-                    rat.innerHTML += '<img src="../img/emptystar' + dir + '.png" class="star-image">';
+                    rat.innerHTML += '<img src="../resources/img/emptystar' + dir + '.png" class="star-image">';
             }
             rat.innerHTML += ' (' + snapshot.val() + ')';
         })
