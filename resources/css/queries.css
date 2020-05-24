@@ -78,7 +78,7 @@ input[type="radio"]:first-of-type{
     font-size: 90%;
 }
   .hero-text-box,
-  .row {
+   {
     padding: 0 4%;
   }
   h1 {
@@ -97,6 +97,15 @@ input[type="radio"]:first-of-type{
   .rat-submit{
     margin-left: 35%;
   }
+.course-name {
+      height: auto;
+  }
+.tags ul {
+        height: auto;
+    }
+    .card {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -104,11 +113,16 @@ input[type="radio"]:first-of-type{
     font-size: 250%;
     margin-left: 5px;
   }
+/*
   .course-name {
       height: auto;
   }
 .tags ul {
         height: auto;
+    }
+*/
+    .card {
+        width: 90%;
     }
     .card div:not(:first-child) {
     padding: 2px 8px;
@@ -139,7 +153,6 @@ input[type="radio"]:first-of-type{
     }
     .expand-shrink {
         width: 80%;
-/*        margin: 0;*/
     }
     .option-input{
       height: 20px;
