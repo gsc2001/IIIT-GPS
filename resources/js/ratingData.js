@@ -49,6 +49,7 @@ function getRating() {
                     ref_rating.set(JSON.stringify(nr));
                     ref_number.set(JSON.stringify(no));
                     a = true
+                    window.location.reload();
                     break;
 
                 }
