@@ -29,7 +29,7 @@ function getRating() {
         
         let radios = document.getElementsByName('rating');
         for(let r of radios) {
-            if (r.value == localStorage.getItem(KEY_RATING)) {
+            if (r.value == localStorage.getItem(KEY_RATING + btn.id)) {
                 r.checked = true;
                 btn.innerHTML = 'Update';
             }
@@ -55,10 +55,10 @@ function getRating() {
                     let nr = (rating * no + data);
                     no += 1;
                     if (btn.innerHTML == 'Update') {
-                        nr -= localStorage.getItem(KEY_RATING);
+                        nr -= localStorage.getItem(KEY_RATING + btn.id);
                         no -= 1;
                     }
-                    localStorage.setItem(KEY_RATING, data);
+                    localStorage.setItem(KEY_RATING + btn.id, data);
                     nr = nr / no;
 //                    nr = Math.round(nr * 10) / 10;
                     ref_rating.set(JSON.stringify(nr));
