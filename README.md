@@ -18,7 +18,7 @@ Checkout the website by [clicking here](https://web.iiit.ac.in/~sanchit.arora/II
 - A dedicated course page for the Syllabus, Resources and Suggestions/Comments of other students.
 - All the course pages are made dynamically on request by the user.
 - New courses can be added by just giving providing some details in a JSON file.
-- A working star rating system (data stored in firebase) and comments (external widget).
+- A working rating system (data stored in firebase).
 
 ### Our goals for near future
 - Add more courses.
