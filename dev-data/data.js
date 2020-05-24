@@ -28,5 +28,6 @@ function main() {
     courseRender(parseInt(currentcourse));
     bookMarkHandle(false);
     addRating();
+    getRating();
   }
 }
