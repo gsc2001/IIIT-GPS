@@ -4,43 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">I Year</title>
+    <title>Hackathon</title>
 
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
 
     <!-- style-sheet includes bootstrap, main, queries -->
-    <link rel="stylesheet" href="../../vendors/css/mybootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/queries.css">
-    <link rel="stylesheet" type="text/css" href="../../vendors/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="../../vendors/css/grid.css">
+    <link rel="stylesheet" href="../vendors/css/mybootstrap.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
 
 
     <!-- script includes bootstrap, font-awesome, jquery,Handlebars -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../vendors/js/bootstrap.min.js"></script>
+    <script src="../vendors/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/1fde7af15d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
-    <script src="../js/config.js"></script>
+    <script src="./resources/js/config.js"></script>
     <!-- /script includes -->
 
     <!-- Templates -->
-    <!-- Small card template -->
     <script id="card-small" type="text/x-handlebars-template">
         <div class="col2 span-1-of-3">
             <div class="card" id="ineedyou">
             
                 <div class="card-img">
-                    <img src="../img/math.webp" />
+                    <img src="../resources/img/math.webp" />
                 </div>
                 
-                <div class="course-name">
+                <div class="course-name" >
                     <ul>
                         <li class="course-name">
                             <ion-icon name="return-down-forward-outline"></ion-icon>{{ course.name }}
@@ -68,30 +67,13 @@
                 </div>
                 
                 <div class="details">
-                    <a class="details-btn" onclick="saveAndOpenCourse(`{{ course.id }}`)" >Details</a>
+                    <a class="details-btn" onclick="saveAndOpenCourse(`{{ course.id }}`)">Details</a>
                 </div>
                 
             </div>
             
         </div>
     </script>
-    <!-- /Small card template -->
-
-    <!-- Year Template -->
-    <script id="year" type="text/x-handlebars-template">
-        <section id="course-cards-{{ year }}-1" class="semester course-display container-fluid">
-            <div class="row">
-                <h2 class="sem-head">I st semester</h2>
-            </div>
-        </section>
-        <section id="course-cards-{{ year }}-2" class="semester course-display container-fluid">
-            <div class="row">
-                <h2 class="sem-head">II nd semester</h2>
-            </div>
-        </section>
-    </script>
-    <!-- /Year Template     -->
-
     <!-- /Templates -->
 
 </head>
@@ -99,20 +81,8 @@
 <body>
 
     <!-- navbar -->
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top bg-chng">
-        <a class="navbar-brand" href="../../index.html">
-            <div class="home">
-                <div class="center">
-                    <button class="home-btn">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                            <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="bg-line" />
-                            <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="hl-line" />
-                        </svg>
-                        <span>My Courses</span>
-                    </button>
-                </div>
-            </div>
-        </a>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand"><i class="fas fa-graduation-cap icon"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -125,28 +95,53 @@
                     <a class="nav-link navbar-item" onclick="saveAndOpenYear(1)">I Year</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-item" onclick="saveAndOpenYear(2)" >II Year</a>
+                    <a class="nav-link navbar-item" onclick="saveAndOpenYear(2)">II Year</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-item" onclick="saveAndOpenYear(3)" >III Year</a>
+                    <a class="nav-link navbar-item" onclick="saveAndOpenYear(3)">III Year</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-item" onclick="saveAndOpenYear(4)" >IV Year</a>
+                    <a class="nav-link navbar-item" onclick="saveAndOpenYear(4)">IV Year</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <div class="header">
+        <div class="hero-text-box">
+            <h1>Confused!!<br />Check out the courses.</h1>
+            <div class="home">
+                <div class="center">
+                    <a href="#course-cards">
+                        <button class="home-btn">
+                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="bg-line" />
+                                <polyline points="181,1 181,59 -1,59 -1,1 186,1" class="hl-line" />
+                            </svg>
+                            <span>My Courses</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Cards -->
-    <section id="year-content"></section>
+    <section id="course-cards" class="course-display container-fluid">
+        <div class="row">
+            <h2 class="sem-head">My-Courses</h2>
+        </div>
+        <section id="course-cards-my"></section>
+    </section>
+
 
 </body>
-<script src="../js/script.js"></script>
-<script src="../js/bookmark-handler.js"></script>
-<script src="../js/card-render.js"></script>
-<script src="../js/file-renderer.js"></script>
-<script src="../js/ratingData.js"></script>
-<script src="../../dev-data/data.js"></script>
+<script src="../resources/js/script.js"></script>
+<script src="../resources/js/navcolorchange.js"></script>
+<script src="../resources/js/bookmark-handler.js"></script>
+<script src="../resources/js/card-render.js"></script>
+<script src="../resources/js/file-renderer.js"></script>
+<script src="../resources/js/ratingData.js"></script>
+<script src="../dev-data/data.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 
 </html>

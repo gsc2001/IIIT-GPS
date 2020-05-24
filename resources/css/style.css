@@ -338,7 +338,7 @@ text-align: right;
 margin-right: 20px;
 }
 
-.details-btn{
+.details-btn, .rat-submit{
 line-height: 30px;
 font-weight: bold;
 text-decoration: none;
@@ -357,7 +357,7 @@ padding: 5px;
   */
 }
 
-.details-btn:hover{
+.details-btn:hover, .rat-submit:hover{
   opacity: 80%;
   color: #f8f8ff;
   cursor: pointer;
