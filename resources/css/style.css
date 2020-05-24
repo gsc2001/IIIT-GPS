@@ -141,7 +141,12 @@ align-items: center;
 }
 
 nav .home-btn{
-  border: 1px solid white;  
+  border: 1px solid white; 
+  transition: 0.6s ease-in-out;
+}
+
+nav .home-btn:hover{
+  transition: 0.6s ease-in-out;
 }
 
 .center {
