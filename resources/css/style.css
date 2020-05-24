@@ -245,7 +245,7 @@ position: relative;
 overflow: hidden;
 }
 
-.card img {
+.card img:not(.star-image) {
 width: 100%;
 border-radius: 5px;
 opacity: 60%;
@@ -531,3 +531,8 @@ section {
     display: inline-block;
 }
 
+.card .star-image {
+    width: 10px;
+    height: auto;
+    vertical-align: middle;
+}
