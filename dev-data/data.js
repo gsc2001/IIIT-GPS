@@ -14,7 +14,7 @@ function main() {
   if (url[5] == 'x')
   {
     updateBookmarks();
-    
+      
   }
   else if(url[5] == 'r'){
     var currentyear = JSON.parse(localStorage.getItem('gpsyear'));
