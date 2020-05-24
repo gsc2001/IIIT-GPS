@@ -69,6 +69,12 @@ input[type="radio"]:first-of-type{
   body {
     font-size: 16px;
   }
+  .home {
+    height: 75px;
+  }
+  .home-btn {
+    height: 50px;
+  }
   section {
     padding: 30px 0;
   }
